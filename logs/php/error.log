@@ -1,0 +1,36 @@
+[13-Jan-2022 17:16:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php:13
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Nikita...', true, Array)
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\index.php(5): get_header()
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Nikita...')
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nikita...')
+#6 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php(17): require('C:\\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php on line 13
+[13-Jan-2022 17:16:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php:13
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Nikita...', true, Array)
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\index.php(5): get_header()
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Nikita...')
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nikita...')
+#6 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php(17): require('C:\\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php on line 13
+[13-Jan-2022 17:16:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php:13
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Nikita...', true, Array)
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\index.php(5): get_header()
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Nikita...')
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nikita...')
+#6 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php(17): require('C:\\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php on line 13
+[13-Jan-2022 17:16:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php:13
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Nikita...', true, Array)
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\index.php(5): get_header()
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Nikita...')
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nikita...')
+#6 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php(17): require('C:\\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php on line 13
