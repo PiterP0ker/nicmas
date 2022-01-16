@@ -46,7 +46,7 @@ html {
 body {
     font: 400 16px/1.68 $font-family;
     color: $black;
-    background-color: $white;
+    background-color: $black;
 }
 
 .container {
@@ -149,4 +149,8 @@ h4 {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.menu-toggle {
+    display: none;
 }

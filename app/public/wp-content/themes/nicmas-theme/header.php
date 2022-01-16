@@ -10,16 +10,33 @@
     <?php wp_body_open(); ?>
 
     <?php
-
+    $logo = get_field('logo', 'option');
     ?>
     <header class="header">
-        <nav class="header__nav-mobile">
-                    <?php if (has_nav_menu('menu')) :
-                        echo wp_nav_menu(array(
-                            'theme_location' => 'menu',
-                            'menu_class' => 'header__menu-mobile',
-                        ));
-                    endif; ?>
-                </nav>
+        <div class="wrapper header__wrapper">
+            <?php if ($logo) : ?>
+                <a class="header__logo" href="<?php echo home_url(); ?>">
+                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+                </a>
+            <?php endif; ?>
+
+            <nav class="header__nav">
+                <?php if (has_nav_menu('menu')) :
+                    echo wp_nav_menu(array(
+                        'theme_location' => 'menu',
+                        'menu_class' => 'header__menu',
+                    ));
+
+                endif; ?>
+                <div class="header__search">
+                    <?php echo get_template_part('svg/search'); ?>
+                </div>
+
+                <div class="header__language">
+                    RUS
+                    <?php echo get_template_part('svg/arrow-down'); ?>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>

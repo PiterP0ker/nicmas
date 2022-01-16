@@ -34,3 +34,299 @@ Stack trace:
 #4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Nikita...')
 #5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nikita...')
 #6 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php(17): require('C:\\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\isida-theme\header.php on line 13
+[16-Jan-2022 18:45:43 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 12
+[16-Jan-2022 18:51:38 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ')' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 12
+[16-Jan-2022 18:54:23 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 12
+[16-Jan-2022 18:58:49 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 15
+[16-Jan-2022 19:12:53 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 17
+[16-Jan-2022 19:13:08 UTC] PHP Warning:  Use of undefined constant type - assumed 'type' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:13:08 UTC] PHP Stack trace:
+[16-Jan-2022 19:13:08 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:13:08 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:13:08 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:13:08 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:13:08 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:13:08 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:13:08 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:13:08 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:13:08 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:18
+[16-Jan-2022 19:13:08 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:18
+[16-Jan-2022 19:13:08 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:13:08 UTC] PHP Stack trace:
+[16-Jan-2022 19:13:08 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:13:08 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:13:08 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:13:08 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:13:08 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:13:08 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:13:08 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:13:08 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:13:08 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:18
+[16-Jan-2022 19:13:08 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:18
+[16-Jan-2022 19:14:33 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 17
+[16-Jan-2022 19:15:18 UTC] PHP Warning:  Use of undefined constant type - assumed 'type' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:15:18 UTC] PHP Stack trace:
+[16-Jan-2022 19:15:18 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:15:18 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:15:18 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:15:18 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:15:18 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:15:18 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:15:18 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:15:18 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:15:18 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:15:18 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:15:18 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:15:18 UTC] PHP Stack trace:
+[16-Jan-2022 19:15:18 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:15:18 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:15:18 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:15:18 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:15:18 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:15:18 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:15:18 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:15:18 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:15:18 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:15:18 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP Warning:  Use of undefined constant _menu_item_object_id - assumed '_menu_item_object_id' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 16
+[16-Jan-2022 19:26:06 UTC] PHP Stack trace:
+[16-Jan-2022 19:26:06 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[16-Jan-2022 19:26:06 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[16-Jan-2022 19:26:06 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[16-Jan-2022 19:26:06 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[16-Jan-2022 19:26:06 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[16-Jan-2022 19:26:06 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[16-Jan-2022 19:26:06 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[16-Jan-2022 19:26:06 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[16-Jan-2022 19:26:06 UTC] PHP   9. array_filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
+[16-Jan-2022 19:29:22 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 18
+[16-Jan-2022 19:35:20 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 26
