@@ -251,9 +251,12 @@ h4 {
 }
 
 .sub-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 242px 98px 1fr;
+  grid-template-columns: 242px 1fr;
+  grid-column-gap: 98px;
+  padding-top: 79px;
   opacity: 0;
   pointer-events: none;
   top: 100%;
@@ -262,21 +265,51 @@ h4 {
   width: 100%;
   height: calc(100vh - 97px);
   background-color: #306ee7;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 46px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.sub-menu .sub-menu__inner-content {
+  position: absolute;
+  top: 79px;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 386px);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+}
+.sub-menu .sub-menu__inner-content img {
+  margin-top: 44px;
+}
+.sub-menu__inner-title {
+  color: #fff;
+  max-width: 421px;
+}
+.sub-menu__inner-description {
+  margin-top: 30px;
+  max-width: 421px;
+}
+.sub-menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+  margin-bottom: auto;
+}
 .sub-menu a {
   padding: 18px 23px;
   font-size: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 24px;
+  grid-template-columns: 1fr 24px;
+  grid-column-gap: 5px;
+}
+.sub-menu a svg {
+  margin-top: auto;
+  margin-bottom: auto;
 }
