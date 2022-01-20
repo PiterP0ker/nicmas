@@ -330,3 +330,87 @@ Stack trace:
 [16-Jan-2022 19:26:06 UTC] PHP  10. filter() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:19
 [16-Jan-2022 19:29:22 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 18
 [16-Jan-2022 19:35:20 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php on line 26
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Use of undefined constant facebook - assumed 'facebook' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 46
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Illegal string offset 'url' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 46
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Use of undefined constant instagram - assumed 'instagram' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 51
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Illegal string offset 'url' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 51
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Use of undefined constant youtube - assumed 'youtube' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 56
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[20-Jan-2022 17:42:56 UTC] PHP Warning:  Illegal string offset 'url' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\footer.php on line 56
+[20-Jan-2022 17:42:56 UTC] PHP Stack trace:
+[20-Jan-2022 17:42:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[20-Jan-2022 17:42:56 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[20-Jan-2022 17:42:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[20-Jan-2022 17:42:56 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[20-Jan-2022 17:42:56 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[20-Jan-2022 17:42:56 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[20-Jan-2022 17:42:56 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[20-Jan-2022 17:42:56 UTC] PHP   9. get_footer() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:21
+[20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
+[20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770

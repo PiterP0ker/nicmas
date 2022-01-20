@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
+  position: absolute;
 
   &__wrapper {
     display: flex;
