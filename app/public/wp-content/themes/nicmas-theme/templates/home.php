@@ -4,18 +4,6 @@ Template Name: Home Template
 */
 get_header();
 
-?>
-<section class="section section--hero">
-    <div class="container">
-        <div class="hero">
-        <?php
-
-            ?>
-        </div>
-    </div>
-</section>
-
-
-<?php
+the_content();
 
 get_footer();
