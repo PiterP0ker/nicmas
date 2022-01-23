@@ -1,0 +1,18 @@
+.hero {
+
+  &__parallax {
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__info {
+    background-color: $primary-color;
+    height: 100vh;
+    color: $white;
+  }
+}

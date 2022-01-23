@@ -37,7 +37,7 @@ html {
 body {
   font: 400 16px/1.68 "Montserrat", sans-serif;
   color: #000;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .container {
@@ -318,8 +318,6 @@ h4 {
 
 .footer {
   background-color: #306ee7;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 50px 0;
   border-top: 1px solid #fff;
@@ -468,4 +466,17 @@ h4 {
 }
 .footer-desktop .footer-bottom__socials a + a {
   margin-left: 7px;
+}
+
+.hero__parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__info {
+  background-color: #306ee7;
+  height: 100vh;
+  color: #fff;
 }
