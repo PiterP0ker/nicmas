@@ -8,8 +8,10 @@
 @import "reset";
 @import "fonts";
 @import 'global';
+@import "parts";
 @import 'header';
 @import 'footer';
 @import 'blocks/hero';
+@import 'blocks/informational';
 @import 'blocks/main-hero';
 @import 'blocks/directions';

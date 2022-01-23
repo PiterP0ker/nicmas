@@ -1,18 +1,27 @@
 .hero {
-
   &__parallax {
-
     height: 100vh;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
-  &__info {
-    background-color: $primary-color;
-    height: 100vh;
+  &__content {
     color: $white;
+    padding-bottom: 136px;
+  }
+
+  &__title {
+    color: $white;
+    max-width: 591px;
+  }
+
+  &__subtitle {
+    margin-top: 63px;
+    max-width: 291px;
   }
 }

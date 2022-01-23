@@ -1,0 +1,25 @@
+.link {
+  color: $grey-links;
+  transition: 0.4s;
+
+  svg {
+    margin-left: 25px;
+    transition: 0.4s;
+    path {
+      opacity: 1;
+      transition: 0.4s;
+      fill: $grey-links;
+    }
+  }
+
+  &:hover {
+    font-weight: 700;
+    color: $primary-color;
+    svg {
+      margin-left: 45px;
+      path {
+        fill: $primary-color;
+      }
+    }
+  }
+}

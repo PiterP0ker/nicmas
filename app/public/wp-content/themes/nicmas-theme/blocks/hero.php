@@ -9,13 +9,11 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-// Create id attribute allowing for custom "anchor" value.
 $id = 'hero-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
-// Create class attribute allowing for custom "className" and "align" values.
 $className = 'hero';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
@@ -32,10 +30,17 @@ $image2_url = get_field("paralax_image", $post_id)
 
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <?php if($image_url): ?>
     <div class="hero__parallax" style="background-image: url('<?php echo $image_url ?>')"></div>
-    <div class="hero__parallax" style="background-image: url('<?php  echo $image2_url ?>')"></div>
-    <div class="hero__info">
-        <h1><?php echo $title ?></h1>
-        <p><?php echo $subtitle ?></p>
+    <?php endif; ?>
+    <div class="hero__parallax" style="background-image: url('<?php  echo $image2_url ?>')">
+        <div class="container hero__content">
+            <?php if($title): ?>
+                <h1 class="hero__title"><?php echo $title ?></h1>
+            <?php endif; ?>
+            <?php if($subtitle): ?>
+                <p class="hero__subtitle"><?php echo $subtitle ?></p>
+            <?php endif; ?>
+        </div>
     </div>
 </section>
