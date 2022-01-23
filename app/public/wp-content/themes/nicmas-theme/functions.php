@@ -303,10 +303,6 @@ if (function_exists('acf_add_options_page')) {
 
 add_theme_support('post-thumbnails');
 
-// New image size
-add_image_size('custom-size', 726, 266, true);
-
-
 add_filter( 'gform_ajax_spinner_url', 'spinner_url', 10, 2 );
 function spinner_url( $image_src, $form ) {
   return  'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // relative to you theme images folder
