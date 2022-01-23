@@ -160,6 +160,33 @@ h4 {
   display: none;
 }
 
+.link {
+  color: #b7b7b7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.link svg {
+  margin-left: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.link svg path {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: #b7b7b7;
+}
+.link:hover {
+  font-weight: 700;
+  color: #306ee7;
+}
+.link:hover svg {
+  margin-left: 45px;
+}
+.link:hover svg path {
+  fill: #306ee7;
+}
+
 .header {
   width: 100vw;
   display: -webkit-box;
@@ -474,9 +501,76 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-.hero__info {
-  background-color: #306ee7;
-  height: 100vh;
+.hero__content {
   color: #fff;
+  padding-bottom: 136px;
+}
+.hero__title {
+  color: #fff;
+  max-width: 591px;
+}
+.hero__subtitle {
+  margin-top: 63px;
+  max-width: 291px;
+}
+
+.informational {
+  padding: 13px 0 128px;
+}
+.informational__container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .informational__container {
+    grid-row-gap: 75px;
+  }
+}
+.informational__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .informational__content {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .informational__content.revert .informational__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .informational__content.revert .informational__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .informational__text {
+    max-width: 483px;
+  }
+}
+.informational__image img {
+  margin: 0 auto;
 }
