@@ -46,7 +46,7 @@ html {
 body {
     font: 400 16px/1.68 $font-family;
     color: $black;
-    background-color: $black;
+    background-color: $white;
 }
 
 .container {
@@ -119,9 +119,6 @@ h3 {
 h4 {
     font-size: 14px;
     font-weight: 600;
-}
-
-.section {
 }
 
 .gform_ajax_spinner {

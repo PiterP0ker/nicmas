@@ -414,3 +414,37 @@ Stack trace:
 [20-Jan-2022 17:42:56 UTC] PHP  10. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:92
 [20-Jan-2022 17:42:56 UTC] PHP  11. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
 [20-Jan-2022 17:42:56 UTC] PHP  12. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:770
+[23-Jan-2022 14:51:20 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\main-hero.php on line 39
+[23-Jan-2022 16:35:20 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php on line 48
+[23-Jan-2022 16:41:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_post_thumbnail() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php:39
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(418): include()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(349): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(316): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php(221): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\publ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php on line 39
+[23-Jan-2022 16:41:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_post_thumbnail() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php:39
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(418): include()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(349): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(316): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php(221): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\publ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php on line 39
+[23-Jan-2022 16:46:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_title() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php:40
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(418): include()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(349): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(316): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php(221): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-inc in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php on line 40
+[23-Jan-2022 17:07:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Направлення() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php:36
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(418): include()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(349): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(316): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php(221): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\ in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\directions.php on line 36

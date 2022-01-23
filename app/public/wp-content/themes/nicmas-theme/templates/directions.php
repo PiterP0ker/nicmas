@@ -4,14 +4,10 @@ Template Name: Directions Template
 */
 get_header();
 
-?>
-<section class="section section--directions">
-    <div class="container">
-        <div class="directions">
+the_content();
 
-        </div>
-    </div>
-</section>
+?>
+
 
 
 <?php
