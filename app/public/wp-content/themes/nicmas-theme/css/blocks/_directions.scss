@@ -1,5 +1,6 @@
 .directions {
-  padding: 69px 0 34px;
+  padding: 100px 0 34px;
+  background: $grey;
 
   .directions-wrapper {
     display: flex;
@@ -61,12 +62,29 @@
       position: relative;
       height: 458px;
       margin: 0 10px;
+      transition: 0.4s;
+
+      &:hover {
+        .directions-cards__title,
+        .directions-cards__subtitle {
+          color: $white;
+        }
+
+        .directions-cards__text {
+          background-color: $primary-color;
+        }
+      }
     }
 
-    &__image {
+    &__image,
+    &__image-hover {
       height: 237px;
       width: 100%;
       object-fit: cover;
+    }
+
+    &__image-hover {
+      display: none;
     }
 
     &__text {
@@ -75,6 +93,7 @@
       flex-direction: column;
       padding: 64px 21px 32px;
       border: 1px solid $primary-text-color;
+      border-top: none;
     }
 
     &__title {

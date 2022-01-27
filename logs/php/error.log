@@ -520,3 +520,901 @@ Stack trace:
 [23-Jan-2022 17:29:34 UTC] PHP  12. acf_rendered_block() D:\LocalSites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
 [23-Jan-2022 17:29:34 UTC] PHP  13. acf_render_block() D:\LocalSites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
 [23-Jan-2022 17:29:34 UTC] PHP  14. include() D:\LocalSites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[25-Jan-2022 19:44:28 UTC] PHP Parse error:  syntax error, unexpected 'n' (T_STRING), expecting ')' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\news.php on line 46
+[25-Jan-2022 19:59:25 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Post as array in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\news.php:44
+Stack trace:
+#0 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(418): include()
+#1 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(349): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(316): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php(221): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-inclu in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\news.php on line 44
+[25-Jan-2022 21:54:56 UTC] PHP Warning:  array_intersect(): Expected parameter 2 to be an array, null given in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php on line 123
+[25-Jan-2022 21:54:56 UTC] PHP Stack trace:
+[25-Jan-2022 21:54:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:0
+[25-Jan-2022 21:54:56 UTC] PHP   2. activate_plugin() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:58
+[25-Jan-2022 21:54:56 UTC] PHP   3. plugin_sandbox_scrape() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\includes\plugin.php:668
+[25-Jan-2022 21:54:56 UTC] PHP   4. include_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\includes\plugin.php:2286
+[25-Jan-2022 21:54:56 UTC] PHP   5. array_intersect() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php:123
+[25-Jan-2022 21:54:56 UTC] PHP Warning:  array_intersect(): Expected parameter 2 to be an array, null given in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php on line 123
+[25-Jan-2022 21:54:56 UTC] PHP Stack trace:
+[25-Jan-2022 21:54:56 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:0
+[25-Jan-2022 21:54:56 UTC] PHP   2. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:10
+[25-Jan-2022 21:54:56 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\admin.php:34
+[25-Jan-2022 21:54:56 UTC] PHP   4. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-load.php:50
+[25-Jan-2022 21:54:56 UTC] PHP   5. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-config.php:77
+[25-Jan-2022 21:54:56 UTC] PHP   6. include_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-settings.php:409
+[25-Jan-2022 21:54:56 UTC] PHP   7. array_intersect() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php:123
+[25-Jan-2022 21:55:03 UTC] PHP Warning:  array_intersect(): Expected parameter 2 to be an array, null given in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php on line 123
+[25-Jan-2022 21:55:03 UTC] PHP Stack trace:
+[25-Jan-2022 21:55:03 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:0
+[25-Jan-2022 21:55:03 UTC] PHP   2. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:10
+[25-Jan-2022 21:55:03 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\admin.php:34
+[25-Jan-2022 21:55:03 UTC] PHP   4. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-load.php:50
+[25-Jan-2022 21:55:03 UTC] PHP   5. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-config.php:77
+[25-Jan-2022 21:55:03 UTC] PHP   6. include_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-settings.php:409
+[25-Jan-2022 21:55:03 UTC] PHP   7. array_intersect() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php:123
+[25-Jan-2022 21:55:10 UTC] PHP Warning:  array_intersect(): Expected parameter 2 to be an array, null given in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php on line 123
+[25-Jan-2022 21:55:10 UTC] PHP Stack trace:
+[25-Jan-2022 21:55:10 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:0
+[25-Jan-2022 21:55:10 UTC] PHP   2. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\plugins.php:10
+[25-Jan-2022 21:55:10 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\admin.php:34
+[25-Jan-2022 21:55:10 UTC] PHP   4. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-load.php:50
+[25-Jan-2022 21:55:10 UTC] PHP   5. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-config.php:77
+[25-Jan-2022 21:55:10 UTC] PHP   6. include_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-settings.php:409
+[25-Jan-2022 21:55:10 UTC] PHP   7. array_intersect() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\page-or-post-clone\page-or-post-clone.php:123
+[26-Jan-2022 00:14:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 49
+[26-Jan-2022 00:14:45 UTC] PHP Stack trace:
+[26-Jan-2022 00:14:45 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\admin-ajax.php:0
+[26-Jan-2022 00:14:45 UTC] PHP   2. do_action() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-admin\admin-ajax.php:187
+[26-Jan-2022 00:14:45 UTC] PHP   3. WP_Hook->do_action() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:470
+[26-Jan-2022 00:14:45 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:327
+[26-Jan-2022 00:14:45 UTC] PHP   5. acf_ajax_fetch_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 00:14:45 UTC] PHP   6. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:640
+[26-Jan-2022 00:14:45 UTC] PHP   7. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 00:14:45 UTC] PHP   8. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 00:24:44 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 48
+[26-Jan-2022 14:16:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 45
+[26-Jan-2022 14:16:22 UTC] PHP Stack trace:
+[26-Jan-2022 14:16:22 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 14:16:22 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 14:16:22 UTC] PHP   3. wp() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:16
+[26-Jan-2022 14:16:22 UTC] PHP   4. WP->main() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\functions.php:1291
+[26-Jan-2022 14:16:22 UTC] PHP   5. WP->parse_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp.php:750
+[26-Jan-2022 14:16:22 UTC] PHP   6. do_action_ref_array() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp.php:388
+[26-Jan-2022 14:16:22 UTC] PHP   7. WP_Hook->do_action() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:518
+[26-Jan-2022 14:16:22 UTC] PHP   8. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:327
+[26-Jan-2022 14:16:22 UTC] PHP   9. rest_api_loaded() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 14:16:22 UTC] PHP  10. WP_REST_Server->serve_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api.php:370
+[26-Jan-2022 14:16:22 UTC] PHP  11. WP_REST_Server->dispatch() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:414
+[26-Jan-2022 14:16:22 UTC] PHP  12. WP_REST_Server->respond_to_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:987
+[26-Jan-2022 14:16:22 UTC] PHP  13. WP_REST_Posts_Controller->update_item() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:1140
+[26-Jan-2022 14:16:22 UTC] PHP  14. WP_REST_Posts_Controller->prepare_item_for_response() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php:893
+[26-Jan-2022 14:16:22 UTC] PHP  15. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php:1792
+[26-Jan-2022 14:16:22 UTC] PHP  16. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 14:16:22 UTC] PHP  17. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 14:16:22 UTC] PHP  18. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 14:16:22 UTC] PHP  19. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 14:16:22 UTC] PHP  20. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 14:16:22 UTC] PHP  21. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 14:16:22 UTC] PHP  22. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 14:16:22 UTC] PHP  23. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 22:01:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 45
+[26-Jan-2022 22:01:48 UTC] PHP Stack trace:
+[26-Jan-2022 22:01:48 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 22:01:48 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 22:01:48 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 22:01:48 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 22:01:48 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 22:01:48 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 22:01:48 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 22:01:48 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 22:01:48 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 22:01:48 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 22:01:48 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 22:01:48 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 22:01:48 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 22:01:48 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 22:01:48 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 22:01:48 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 22:01:48 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 22:01:48 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 22:05:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 47
+[26-Jan-2022 22:05:50 UTC] PHP Stack trace:
+[26-Jan-2022 22:05:50 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 22:05:50 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 22:05:50 UTC] PHP   3. wp() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:16
+[26-Jan-2022 22:05:50 UTC] PHP   4. WP->main() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\functions.php:1291
+[26-Jan-2022 22:05:50 UTC] PHP   5. WP->parse_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp.php:750
+[26-Jan-2022 22:05:50 UTC] PHP   6. do_action_ref_array() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp.php:388
+[26-Jan-2022 22:05:50 UTC] PHP   7. WP_Hook->do_action() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:518
+[26-Jan-2022 22:05:50 UTC] PHP   8. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:327
+[26-Jan-2022 22:05:50 UTC] PHP   9. rest_api_loaded() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 22:05:50 UTC] PHP  10. WP_REST_Server->serve_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api.php:370
+[26-Jan-2022 22:05:50 UTC] PHP  11. WP_REST_Server->dispatch() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:414
+[26-Jan-2022 22:05:50 UTC] PHP  12. WP_REST_Server->respond_to_request() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:987
+[26-Jan-2022 22:05:50 UTC] PHP  13. WP_REST_Posts_Controller->get_item() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\class-wp-rest-server.php:1140
+[26-Jan-2022 22:05:50 UTC] PHP  14. WP_REST_Posts_Controller->prepare_item_for_response() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php:550
+[26-Jan-2022 22:05:50 UTC] PHP  15. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php:1792
+[26-Jan-2022 22:05:50 UTC] PHP  16. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 22:05:50 UTC] PHP  17. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 22:05:50 UTC] PHP  18. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 22:05:50 UTC] PHP  19. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 22:05:50 UTC] PHP  20. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 22:05:50 UTC] PHP  21. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 22:05:50 UTC] PHP  22. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 22:05:50 UTC] PHP  23. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 22:16:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 47
+[26-Jan-2022 22:16:17 UTC] PHP Stack trace:
+[26-Jan-2022 22:16:17 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 22:16:17 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 22:16:17 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 22:16:17 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 22:16:17 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 22:16:17 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 22:16:17 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 22:16:17 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 22:16:17 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 22:16:17 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 22:16:17 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 22:16:17 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 22:16:17 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 22:16:17 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 22:16:17 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 22:16:17 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 22:16:17 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 22:16:17 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 22:19:58 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ':' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 56
+[26-Jan-2022 23:11:43 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 53
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 53
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:16:20 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 53
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:16:20 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 53
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:16:20 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php on line 53
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:16:20 UTC] PHP Stack trace:
+[26-Jan-2022 23:16:20 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:16:20 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:16:20 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:16:20 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:16:20 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:16:20 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:16:20 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:16:20 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:16:20 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:16:20 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:16:20 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:16:20 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:16:20 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:16:20 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:16:20 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:16:20 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:16:20 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:16:20 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:16:20 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:16:20 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 3
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 5
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 7
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 8
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 3
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 5
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 7
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 8
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 3
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 5
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 7
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 8
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 3
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 5
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 7
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 8
+[26-Jan-2022 23:17:52 UTC] PHP Stack trace:
+[26-Jan-2022 23:17:52 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:17:52 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:17:52 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:17:52 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:17:52 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:17:52 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:17:52 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:17:52 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:17:52 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:17:52 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:17:52 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:17:52 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:17:52 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:17:52 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:17:52 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:17:52 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:17:52 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:17:52 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:17:52 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:17:52 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:09 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:09 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:09 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:09 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:09 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:09 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:09 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:09 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:09 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:09 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:09 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:09 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:09 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:09 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:09 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:09 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:09 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:09 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:09 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:09 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:09 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:09 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:09 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:09 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:09 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:09 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:09 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:09 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:09 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:09 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:09 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:09 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:09 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:09 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:09 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:09 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:09 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:09 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:09 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:09 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:09 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:09 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:09 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:09 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:09 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:09 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:09 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:09 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:09 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:09 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:09 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:09 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:09 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:09 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:09 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:09 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:09 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:09 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:09 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:09 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:09 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:09 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:09 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:09 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:09 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:09 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:09 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:09 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:09 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:09 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:09 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:09 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:09 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:09 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:09 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:47 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:47 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:47 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:47 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:47 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:47 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:47 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:47 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:47 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:47 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:47 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:47 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:47 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:47 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:47 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:47 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:47 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:47 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:47 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:47 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:47 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:47 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:47 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:47 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:47 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:47 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:47 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:47 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:47 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:47 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:47 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:47 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:47 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:47 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:47 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:47 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:47 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:47 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:47 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:47 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:47 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:47 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:47 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:47 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:47 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:47 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:47 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:47 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:47 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:47 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:47 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:47 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:47 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:47 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP Warning:  Use of undefined constant ‘actual’ - assumed '‘actual’' (this will throw an Error in a future version of PHP) in C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\template-parts\actuals-card.php on line 2
+[26-Jan-2022 23:20:47 UTC] PHP Stack trace:
+[26-Jan-2022 23:20:47 UTC] PHP   1. {main}() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:0
+[26-Jan-2022 23:20:47 UTC] PHP   2. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\index.php:17
+[26-Jan-2022 23:20:47 UTC] PHP   3. require_once() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-blog-header.php:19
+[26-Jan-2022 23:20:47 UTC] PHP   4. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template-loader.php:106
+[26-Jan-2022 23:20:47 UTC] PHP   5. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\index.php:9
+[26-Jan-2022 23:20:47 UTC] PHP   6. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP   7. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP   8. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
+[26-Jan-2022 23:20:47 UTC] PHP   9. the_content() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\templates\home.php:7
+[26-Jan-2022 23:20:47 UTC] PHP  10. apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\post-template.php:253
+[26-Jan-2022 23:20:47 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\plugin.php:189
+[26-Jan-2022 23:20:47 UTC] PHP  12. do_blocks() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-hook.php:303
+[26-Jan-2022 23:20:47 UTC] PHP  13. render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:906
+[26-Jan-2022 23:20:47 UTC] PHP  14. WP_Block->render() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\blocks.php:868
+[26-Jan-2022 23:20:47 UTC] PHP  15. acf_render_block_callback() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\class-wp-block.php:221
+[26-Jan-2022 23:20:47 UTC] PHP  16. acf_rendered_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:316
+[26-Jan-2022 23:20:47 UTC] PHP  17. acf_render_block() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:349
+[26-Jan-2022 23:20:47 UTC] PHP  18. include() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php:418
+[26-Jan-2022 23:20:47 UTC] PHP  19. get_template_part() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-content\themes\nicmas-theme\blocks\actual.php:53
+[26-Jan-2022 23:20:47 UTC] PHP  20. locate_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\general-template.php:204
+[26-Jan-2022 23:20:47 UTC] PHP  21. load_template() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:716
+[26-Jan-2022 23:20:47 UTC] PHP  22. require() C:\Users\Nikita Ponarovskyi\Local Sites\nicmas\app\public\wp-includes\template.php:772
