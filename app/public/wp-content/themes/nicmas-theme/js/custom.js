@@ -17,6 +17,16 @@ jQuery(function ($) {
             });
         });
 
+        $('.directions-cards__card').mouseover(function () {
+            $(this).find('.directions-cards__image').hide();
+            $(this).find('.directions-cards__image-hover').show();
+        });
+
+        $('.directions-cards__card').mouseout(function () {
+            $(this).find('.directions-cards__image').show();
+            $(this).find('.directions-cards__image-hover').hide();
+        });
+
         $('.sub-menu .sub-menu-item').mouseover(function () {
             $('.sub-menu__inner-content').css({
                 "opacity": "0",

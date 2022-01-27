@@ -152,3 +152,29 @@ h4 {
 .menu-toggle {
     display: none;
 }
+
+.link-to-archive {
+    color: $black;
+    padding: 10px 40px;
+    border: 1px solid $black;
+    transition: 0.4s;
+
+    &:hover {
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+
+    &--mobile {
+        @media screen and (min-width: $screen-md) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        display: none;
+
+        @media screen and (min-width: $screen-md) {
+            display: block;
+        }
+    }
+}
