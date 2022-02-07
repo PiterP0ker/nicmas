@@ -1,0 +1,61 @@
+.certificates {
+  background-color: $primary-color;
+  padding: 100px 0 100px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 100px 0 150px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 67px;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__slider-controls {
+    display: none;
+    justify-content: space-between;
+
+    @media screen and (min-width: $screen-lg) {
+      display: flex;
+    }
+
+    &--mobile {
+      display: flex;
+      margin-top: 23px;
+    }
+  }
+
+  &__slider-arrow {
+    cursor: pointer;
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__slider-card {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__container-mobile {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+}

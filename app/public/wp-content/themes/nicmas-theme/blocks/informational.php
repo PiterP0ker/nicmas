@@ -47,7 +47,7 @@ $link = get_field("informational_link");
                 <div class="informational__text">
                     <?php echo $text ?>
                     <?php if($type == "single"): ?>
-                        <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'])); endif; ?>
+                        <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'], 'target' => $link['target'], 'color' => 'grey')); endif; ?>
                     <?php endif; ?>
                 </div>
             </div>
@@ -60,7 +60,7 @@ $link = get_field("informational_link");
                     </div>
                     <div class="informational__text">
                         <?php echo $text ?>
-                        <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'])); endif; ?>
+                        <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'], 'target' => $link['target'], 'color' => 'grey')); endif; ?>
                     </div>
                 </div>
             <?php endif; ?>

@@ -64,5 +64,35 @@
                 'icon'              => 'align-left',
                 'keywords'          => array( 'hero' ),
             ));
+
+            acf_register_block_type(array(
+                'name'              => 'services',
+                'title'             => __('Послуги'),
+                'description'       => __('Блок послуг'),
+                'render_template'   => 'blocks/services.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'services' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'image-text',
+                'title'             => __('Блок з фото та текстом'),
+                'description'       => __('Інформаційний блок з фото, текстом та посиланням на інший сайт'),
+                'render_template'   => 'blocks/image-text.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'image-text' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'certificates',
+                'title'             => __('Сертифікати'),
+                'description'       => __('блок із слайдером для сертифікатів'),
+                'render_template'   => 'blocks/certificates.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'certificates' ),
+            ));
         }
     }
