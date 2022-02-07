@@ -90,5 +90,69 @@ jQuery(function ($) {
                 }
             ]
         });
+
+        $('.certificates__slider').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            mobileFirst: true,
+            // centerMode: true,
+            prevArrow: '.certificates__slider-arrow--left',
+            nextArrow: '.certificates__slider-arrow--right',
+            responsive: [
+                {
+                    breakpoint: 604,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        // initialSlide: 1,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // initialSlide: 1,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 1240,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        // initialSlide: 2,
+                        // centerPadding: "109px 0 149px",
+                        arrows: true,
+                    }
+                }
+            ]
+        })
+
+        $('.services__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            // prevArrow: '.main-hero-arrow--left',
+            // nextArrow: '.main-hero-arrow--right',
+        })
+
+        $('.services__menu-item').click(function (e) {
+            e.preventDefault();
+            const id = $(this).data('id')
+            $('.services__information').each(function (item) {
+                if (item === id) {
+                    $(this).addClass('active')
+                } else {
+                    $(this).removeClass('active')
+                }
+            })
+        })
+
     });
 });

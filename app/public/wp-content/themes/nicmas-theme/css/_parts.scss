@@ -1,5 +1,5 @@
 .link {
-  color: $grey-links;
+  color: $white;
   transition: 0.4s;
 
   svg {
@@ -8,7 +8,7 @@
     path {
       opacity: 1;
       transition: 0.4s;
-      fill: $grey-links;
+      fill: $white;
     }
   }
 
@@ -19,6 +19,44 @@
       margin-left: 45px;
       path {
         fill: $primary-color;
+      }
+    }
+  }
+
+  &.white {
+    color: $white;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      color: $dark-blue;
+      svg {
+        path {
+          fill: $dark-blue;
+        }
+      }
+    }
+  }
+
+  &.grey {
+    color: $grey-links;
+
+    svg {
+      path {
+        fill: $grey-links;
+      }
+    }
+
+    &:hover {
+      color: $primary-color;
+      svg {
+        path {
+          fill: $primary-color;
+        }
       }
     }
   }
