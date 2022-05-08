@@ -340,6 +340,7 @@ include_once( get_template_directory() . '/walker.php' );
 
 include_once( get_template_directory() . '/blocks.php' );
 
+
 add_image_size( 'posts', 270, 194 );
 
 function loadmore_ajax_handler(){

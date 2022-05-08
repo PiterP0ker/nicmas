@@ -1,13 +1,37 @@
 jQuery(function ($) {
 
     $(window).on('load', function () {
+        $('.header__menu .menu-item').mouseenter(function () {
+            $('.header__menu~.menu-item a').css({
+                "background-color": "transparent"
+            })
+            $($(this).find('a')[0]).css({
+                "background-color": "#265BC2"
+            })
+        })
+        $('.header__menu .menu-item').mouseleave(function () {
+            $($(this).find('a')[0]).css({
+                "background-color": "transparent"
+            })
+        })
+
         $('.header__menu .menu-item-has-children, .header__search, .header__language').mouseover(function () {
             $('.header__nav').addClass('menu-hover');
             $(this).find('.sub-menu').css({
                 "opacity": "1",
                 "pointer-events": "auto"
-            });
+            })
         });
+
+        $('.header__menu .menu-item-has-children, .header__search, .header__language').mouseenter(function () {
+            $($(this).find('.sub-menu').find('.sub-menu__inner-content')[0]).css({
+                "opacity": "1",
+                "pointer-events": "auto"
+            })
+            $($($(this).find('.sub-menu').find('.sub-menu-item')[0]).find('a')[0]).css({
+               "background-color": "#265BC2"
+            })
+        })
 
         $('.header__menu .menu-item-has-children, .header__search, .header__language').mouseout(function () {
             $('.header__nav').removeClass('menu-hover');
@@ -138,32 +162,42 @@ jQuery(function ($) {
             slidesToScroll: 1,
             arrows: true,
             dots: false,
-            // prevArrow: '.main-hero-arrow--left',
-            // nextArrow: '.main-hero-arrow--right',
+            infinite: false,
+            prevArrow: '.services__slider-arrow.left',
+            nextArrow: '.services__slider-arrow.right',
         })
 
         $('.services__menu-item').click(function (e) {
             e.preventDefault();
             const id = $(this).data('id')
+            $('.services__menu-item').removeClass('active')
+            $(this).addClass('active')
             $('.services__information').each(function (item) {
                 if (item === id) {
                     $(this).addClass('active')
+                    $('.services__info-block').css("height", $(this).height())
                 } else {
                     $(this).removeClass('active')
                 }
             })
         })
 
+        $('.services').each(function () {
+            $($(this).find('.services__menu-item')?.[0]).addClass('active');
+            $($(this).find('.services__information')?.[0]).addClass('active');
+            $(this).find('.services__info-block').css("height", $($(this).find('.services__information')?.[0]).height())
+        })
+
         $('.loadmore').click(function () {
             let post_type = $(this).attr('data-post-type');
             var button = $(this),
-              data = {
-                  'action': 'loadmore',
-                  'query': loadmore_params.posts,
-                  'page': loadmore_params.current_page,
-                  'post_type': post_type,
-                  'ppp': '12'
-              };
+                data = {
+                    'action': 'loadmore',
+                    'query': loadmore_params.posts,
+                    'page': loadmore_params.current_page,
+                    'post_type': post_type,
+                    'ppp': '12'
+                };
 
             $.ajax({
                 url: loadmore_params.ajaxurl,
