@@ -40,10 +40,10 @@ $news = get_field('news');
             </div>
 
             <div class="news-block">
-                <div class="news-block__left" style="background-image: url('<?php echo get_the_post_thumbnail_url($news[0], 'large'); ?>')">
+                <a href="<?php echo the_permalink($news[0]); ?>" class="news-block__left" style="background-image: url('<?php echo get_the_post_thumbnail_url($news[0], 'large'); ?>')">
                     <div class="news-block__gradient"></div>
                     <p class="news-block__left-title"><?php echo get_the_title($news[0]); ?></p>
-                </div>
+                </a>
                 <div class="news-block__right">
                     <?php foreach( $news as $value => $new ): ?>
                         <?php if( $value > 0 ): ?>

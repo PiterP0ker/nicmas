@@ -39,16 +39,18 @@ $images = get_field("certificates_gallery");
             </div>
         </div>
     </div>
-    <div class="certificates__slider">
-        <?php
-            foreach ($images as $image):
-        ?>
-            <div class="certificates__slider-card">
-                <img src="<?php echo $image['url'] ?>">
-            </div>
-        <?
-            endforeach;
-        ?>
+    <div class="container">
+        <div class="certificates__slider">
+            <?php
+                foreach ($images as $image):
+            ?>
+                <div class="certificates__slider-card">
+                    <img src="<?php echo $image['url'] ?>">
+                </div>
+            <?
+                endforeach;
+            ?>
+        </div>
     </div>
     <div class="container certificates__container-mobile">
         <div class="certificates__slider-controls certificates__slider-controls--mobile">
