@@ -31,16 +31,29 @@ $image2_url = get_field("paralax_image", $post_id)
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <?php if($image_url): ?>
-    <div class="hero__parallax" style="background-image: url('<?php echo $image_url ?>')"></div>
-    <?php endif; ?>
-    <div class="hero__parallax" style="background-image: url('<?php  echo $image2_url ?>')">
-        <div class="container hero__content">
-            <?php if($title): ?>
-                <h1 class="hero__title"><?php echo $title ?></h1>
-            <?php endif; ?>
-            <?php if($subtitle): ?>
-                <p class="hero__subtitle"><?php echo $subtitle ?></p>
-            <?php endif; ?>
-        </div>
+    <div class="hero__parallax" style="background-image: url('<?php echo $image_url ?>')">
+        <?php if(!$image2_url): ?>
+            <div class="container hero__content">
+                <?php if($title): ?>
+                    <h1 class="hero__title"><?php echo $title ?></h1>
+                <?php endif; ?>
+                <?php if($subtitle): ?>
+                    <p class="hero__subtitle"><?php echo $subtitle ?></p>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
     </div>
+    <?php endif; ?>
+    <?php if($image2_url): ?>
+        <div class="hero__parallax" style="background-image: url('<?php  echo $image2_url ?>')">
+            <div class="container hero__content">
+                <?php if($title): ?>
+                    <h1 class="hero__title"><?php echo $title ?></h1>
+                <?php endif; ?>
+                <?php if($subtitle): ?>
+                    <p class="hero__subtitle"><?php echo $subtitle ?></p>
+                <?php endif; ?>
+            </div>
+        </div>
+    <?php endif; ?>
 </section>

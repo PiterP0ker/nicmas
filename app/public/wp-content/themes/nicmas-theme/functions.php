@@ -81,8 +81,16 @@ add_action('wp_enqueue_scripts', function () {
 	$theme_vars = [
 		'templateUrl' => get_bloginfo('template_url'),
 		'websiteUrl' => site_url(),
-		'ajaxUrl' => admin_url('admin-ajax.php')
 	];
+
+	global $wp_query;
+
+	wp_localize_script( 'custom_scripts', 'loadmore_params', array(
+    		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
+    		'posts' => json_encode( $wp_query->query_vars ),
+    		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+    		'max_page' => $wp_query->max_num_pages
+    	) );
 	wp_localize_script('custom_scripts', 'themeData', $theme_vars);
 	wp_enqueue_script('custom_scripts');
 });
@@ -331,3 +339,32 @@ function remove_draft_widget(){
 include_once( get_template_directory() . '/walker.php' );
 
 include_once( get_template_directory() . '/blocks.php' );
+
+
+add_image_size( 'posts', 270, 194 );
+
+function loadmore_ajax_handler(){
+
+// 	$args = json_decode( stripslashes( $_POST['query'] ), true );
+	$args['paged'] = $_POST['page'] + 1;
+	$args['post_status'] = 'publish';
+	$args['post_type'] = $_POST['post_type'];
+	$args['post_per_page'] = $_POST['ppp'];
+
+    $zaloop = new WP_Query($args);
+
+	if( $zaloop->have_posts() ) :
+
+		while( $zaloop->have_posts() ): $zaloop->the_post();
+
+
+			get_template_part('template-parts/actuals-card', '', array('actual' => get_post()->ID));
+
+		endwhile;
+
+	endif;
+	die;
+}
+
+add_action('wp_ajax_loadmore', 'loadmore_ajax_handler');
+add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler');

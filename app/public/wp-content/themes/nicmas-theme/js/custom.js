@@ -188,5 +188,40 @@ jQuery(function ($) {
             $(this).find('.services__info-block').css("height", $($(this).find('.services__information')?.[0]).height())
         })
 
+        $('.loadmore').click(function () {
+            let post_type = $(this).attr('data-post-type');
+            var button = $(this),
+                data = {
+                    'action': 'loadmore',
+                    'query': loadmore_params.posts,
+                    'page': loadmore_params.current_page,
+                    'post_type': post_type,
+                    'ppp': '12'
+                };
+
+            $.ajax({
+                url: loadmore_params.ajaxurl,
+                data: data,
+                type: 'POST',
+                beforeSend: function (xhr) {
+                    button.text('Завантаження...');
+                },
+                success: function (data) {
+                    console.log('data', data)
+                    if (data) {
+                        $('.all-posts-news__little').append(data);
+                        button.text('Усі новини');
+                        loadmore_params.current_page++;
+
+                        if (loadmore_params.current_page === loadmore_params.max_page)
+                            button.remove();
+
+                    } else {
+                        button.remove();
+                    }
+                }
+            });
+        });
+
     });
 });
