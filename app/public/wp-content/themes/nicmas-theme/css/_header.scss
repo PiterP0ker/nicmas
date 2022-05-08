@@ -47,10 +47,6 @@
       color: $white;
       padding: 10px;
       transition: 0.4s;
-
-      &:hover {
-        background-color: darken($primary-color, 15%);
-      }
     }
   }
 
@@ -95,6 +91,9 @@
     pointer-events: none;
     transition: 0.4s;
     color: $white;
+    display: grid;
+    grid-template-rows: 78px 40px 1fr;
+    grid-row-gap: 30px;
 
     img {
       margin-top: 44px;
@@ -107,7 +106,6 @@
   }
 
   &__inner-description {
-    margin-top: 30px;
     max-width: 421px;
   }
 

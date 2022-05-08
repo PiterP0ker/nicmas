@@ -37,7 +37,7 @@ $title = get_field("services_title");
                         $index = 0;
                         while( have_rows('services_items') ) : the_row();
                     ?>
-                        <a href="#" class="services__menu-item <?php if($index === 0): echo 'active'; endif; ?>" data-id = "<?php echo $index ?>"><?php echo get_sub_field('title') ?></a>
+                        <a href="#" class="services__menu-item" data-id = "<?php echo $index ?>"><?php echo get_sub_field('title') ?></a>
                     <?php
                             $index++;
                         endwhile;
@@ -51,17 +51,23 @@ $title = get_field("services_title");
                     $index = 0;
                     while( have_rows('services_items') ) : the_row();
                 ?>
-                    <div class="services__information <?php if($index === 0): echo 'active'; endif; ?>" data-id="<?php echo $index ?>">
-                        <div>
-                            <h3><?php echo get_sub_field('title'); ?></h3>
-                            <a>Завантажити каталог</a>
+                    <div class="services__information" data-id="<?php echo $index ?>">
+                        <div class="services__information-top">
+                            <h3 class="services__information-title"><?php echo get_sub_field('title'); ?></h3>
+                            <?php
+                                $file = get_sub_field('file');
+                                if($file):
+                            ?>
+                                <a class="services__download-button" href="<?php echo $file['url'] ?>">Завантажити каталог <?php get_template_part('svg/download-arrow') ?></a>
+                            <?php endif; ?>
                         </div>
                         <?php if(get_sub_field('text_1')): ?>
-                        <div>
+                        <div class="services__text">
                             <?php echo get_sub_field('text_1') ?>
                         </div>
                         <?php endif; ?>
                         <?php if(get_sub_field('photos')): ?>
+                        <div class="relative">
                             <div class="services__slider">
                                 <?php $photos = get_sub_field('photos');
                                 foreach($photos as $photo):
@@ -73,9 +79,14 @@ $title = get_field("services_title");
                                 endforeach;
                                 ?>
                             </div>
+                            <div class="services__slider-controls">
+                                <div class="services__slider-arrow left"><?php get_template_part('svg/slider-arrow-left') ?></div>
+                                <div class="services__slider-arrow right"><?php get_template_part('svg/slider-arrow-right') ?></div>
+                            </div>
+                        </div>
                         <?php endif; ?>
                         <?php if(get_sub_field('text_2')): ?>
-                        <div>
+                        <div class="services__text">
                             <?php echo get_sub_field('text_2') ?>
                         </div>
                         <?php endif; ?>

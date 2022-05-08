@@ -96,3 +96,21 @@
             ));
         }
     }
+
+add_filter( 'allowed_block_types_all', 'filter_function_name_2201', 10, 2 );
+function filter_function_name_2201( $allowed_block_types, $block_editor_context ){
+    return [
+        'core/heading',
+        'core/paragraph',
+        'core/image',
+        'core/list',
+        'acf/main-hero',
+        'acf/news',
+        'acf/actual',
+        'acf/informational',
+        'acf/hero',
+        'acf/services',
+        'acf/image-text',
+        'acf/certificates',
+    ];
+}
