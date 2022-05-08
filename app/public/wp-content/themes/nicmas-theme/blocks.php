@@ -36,6 +36,36 @@
             ));
 
             acf_register_block_type(array(
+                'name'              => 'all-posts-news',
+                'title'             => __('Всі публікації'),
+                'description'       => __('Всі публікації'),
+                'render_template'   => 'blocks/all-posts-news.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'all-posts-news' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'chosen-videos',
+                'title'             => __('Вибірка відео'),
+                'description'       => __('Вибірка відео'),
+                'render_template'   => 'blocks/chosen-videos.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'chosen-videos' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'videos-by-categories',
+                'title'             => __('Відео за категорією'),
+                'description'       => __('Відео за категорією'),
+                'render_template'   => 'blocks/videos-by-categories.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'videos-by-categories' ),
+            ));
+
+            acf_register_block_type(array(
                 'name'              => 'actual',
                 'title'             => __('Актуальні'),
                 'description'       => __('Актуальні'),
