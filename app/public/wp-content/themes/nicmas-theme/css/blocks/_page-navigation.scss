@@ -1,0 +1,28 @@
+.page-navigation {
+  padding: 70px 0;
+
+  &__container {
+    display: grid;
+    grid-column-gap: 25px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $grey;
+    padding: 11px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+}

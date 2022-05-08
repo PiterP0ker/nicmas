@@ -33,6 +33,7 @@ $link = get_field("informational_link");
 
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <a id="<?php echo $title ?>"></a>
     <div class="container informational__container">
         <?php if($title): ?>
             <h2><?php echo $title ?></h2>

@@ -42,8 +42,10 @@ $directions = get_field('directions');
                         <?php $image2_url = get_field('paralax_image', $direction->ID); ?>
                         <?php setup_postdata($direction); ?>
                         <a href="<?php echo the_permalink($direction->ID); ?>" class="directions-cards__card">
-                            <img class="directions-cards__image" src="<?php echo get_the_post_thumbnail_url($direction->ID, 'medium'); ?>" >
-                            <img class="directions-cards__image-hover" src="<?php  echo $image2_url ?>" >
+                            <div class="relative">
+                                <img class="directions-cards__image" src="<?php echo get_the_post_thumbnail_url($direction->ID, 'medium'); ?>" >
+                                <img class="directions-cards__image-hover" src="<?php  echo $image2_url ?>" >
+                            </div>
                             <div class="directions-cards__text">
                                 <h3 class="directions-cards__title"><?php echo get_the_title($direction->ID); ?></h3>
                                 <p class="directions-cards__subtitle"><?php echo get_field('subtitle', $direction->ID); ?></p>
