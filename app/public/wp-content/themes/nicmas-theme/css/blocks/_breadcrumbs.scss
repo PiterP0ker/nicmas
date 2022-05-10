@@ -24,14 +24,6 @@
 
     &:last-child {
       font-weight: 500;
-
-      svg {
-        margin-left: 12px;
-
-        path {
-          stroke: $black;
-        }
-      }
     }
 
     &:first-child {

@@ -31,7 +31,7 @@ foreach ($content_array as $key => $val) {
 }
 
 $content_array_filtered = array_filter($content_array, function ($value, $key) use ($blockIndex) {
-    return $value['blockName'] && $key > $blockIndex;
+    return $value['blockName'] && $value['blockName'] !== 'acf/actual' && $key > $blockIndex;
 }, ARRAY_FILTER_USE_BOTH);
 
 ?>

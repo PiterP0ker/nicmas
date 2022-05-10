@@ -144,6 +144,26 @@
                 'icon'              => 'align-left',
                 'keywords'          => array( 'breadcrumbs' ),
             ));
+
+            acf_register_block_type(array(
+                'name'              => 'accordion',
+                'title'             => __('Блок робіт'),
+                'description'       => __('блок акордіону / таблиця робіт'),
+                'render_template'   => 'blocks/accordion.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'accordion' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'contact-form',
+                'title'             => __('Контактна форма'),
+                'description'       => __('форма для контактів'),
+                'render_template'   => 'blocks/contact-form.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'contact-form' ),
+            ));
         }
     }
 
@@ -164,5 +184,7 @@ function filter_function_name_2201( $allowed_block_types, $block_editor_context 
         'acf/certificates',
         'acf/page-navigation',
         'acf/breadcrumbs',
+        'acf/accordion',
+        'acf/contact-form'
     ];
 }

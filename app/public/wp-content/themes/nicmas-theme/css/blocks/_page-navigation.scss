@@ -1,5 +1,18 @@
 .page-navigation {
   padding: 70px 0;
+  top: -182px;
+
+  &--sticky {
+    position: sticky;
+    padding: 5px 0;
+    background-color: $white;
+    transition: 0.3s;
+    z-index: 3;
+  }
+
+  &--sticky-shown {
+    top: 97px;
+  }
 
   &__container {
     display: grid;

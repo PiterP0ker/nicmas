@@ -49,7 +49,7 @@ $links = array_reverse(getLinks($menu, $post_id));
             foreach ($links as $key => $link):
                 $title = $link->title;
         ?>
-            <a class="breadcrumbs__item"><?php echo $title; if($key == (count($links)-1)): echo get_template_part('svg/arrow-down'); endif; ?></a>
+            <a class="breadcrumbs__item"><?php echo $title; ?></a>
         <?php
             endforeach;
         ?>
