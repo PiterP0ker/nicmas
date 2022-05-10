@@ -25,7 +25,8 @@ if( !empty($block['align']) ) {
 $post_id = get_post()->ID;
 $type = get_field("informational_type");
 $title = get_field("informational_title");
-$text = get_field("informational_text");
+$text_1 = get_field("informational_text_1");
+$text_2 = get_field("informational_text_2");
 $image1 = get_field("informational_photo_1");
 $image2 = get_field("informational_photo_2");
 $video = get_field("informational_video_link");
@@ -46,7 +47,7 @@ $link = get_field("informational_link");
                     <?php endif; ?>
                 </div>
                 <div class="informational__text">
-                    <?php echo $text ?>
+                    <?php echo $text_1 ?>
                     <?php if($type == "single"): ?>
                         <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'], 'target' => $link['target'], 'color' => 'grey')); endif; ?>
                     <?php endif; ?>
@@ -60,7 +61,7 @@ $link = get_field("informational_link");
                         <?php endif; ?>
                     </div>
                     <div class="informational__text">
-                        <?php echo $text ?>
+                        <?php echo $text_2 ?>
                         <?php if($link): get_template_part('template-parts/link', '', array('url' => $link['url'], 'title' => $link['title'], 'target' => $link['target'], 'color' => 'grey')); endif; ?>
                     </div>
                 </div>
@@ -71,7 +72,7 @@ $link = get_field("informational_link");
 
             </div>
             <div class="informational__text">
-                <?php echo $text ?>
+                <?php echo $text_1 ?>
             </div>
         </div>
         <?php endif; ?>

@@ -5,7 +5,7 @@
   &--sticky {
     position: sticky;
     padding: 5px 0;
-    background-color: $white;
+    background-color: $grey;
     transition: 0.3s;
     z-index: 3;
   }
@@ -27,15 +27,14 @@
     background-color: $grey;
     padding: 11px 10px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 17px;
     color: $black;
     transition: 0.3s;
 
     &:hover {
       background-color: $primary-color;
       color: $white;
-      font-weight: 700;
     }
   }
 }

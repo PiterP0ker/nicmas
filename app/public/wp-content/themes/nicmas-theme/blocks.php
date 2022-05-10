@@ -147,7 +147,7 @@
 
             acf_register_block_type(array(
                 'name'              => 'accordion',
-                'title'             => __('Блок робіт'),
+                'title'             => __('Блок робіт/звітів'),
                 'description'       => __('блок акордіону / таблиця робіт'),
                 'render_template'   => 'blocks/accordion.php',
                 'category'          => 'formatting',
