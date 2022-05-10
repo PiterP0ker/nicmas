@@ -31,7 +31,7 @@ $image2_url = get_field("paralax_image", $post_id)
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <?php if($image_url): ?>
-    <div class="hero__parallax" style="background-image: url('<?php echo $image_url ?>')">
+    <div class="hero__parallax" style="background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 63%, rgba(0, 0, 0, 0) 0%), url('<?php echo $image_url ?>')">
         <?php if(!$image2_url): ?>
             <div class="container hero__content">
                 <?php if($title): ?>

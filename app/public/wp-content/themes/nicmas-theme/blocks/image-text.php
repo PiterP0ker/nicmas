@@ -36,6 +36,7 @@ else:
 endif;
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> <?php echo $background ?>">
+    <a id="<?php echo $title ?>"></a>
     <div class="wrapper image-text__wrapper">
         <div class="image-text__image-block">
             <?php if($image_url): ?><img class="image-text__image" src="<?php echo $image_url ?>"> <?php endif; ?>

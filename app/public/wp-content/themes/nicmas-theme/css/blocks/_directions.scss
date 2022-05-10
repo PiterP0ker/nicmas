@@ -16,7 +16,7 @@
 
       .directions-arrow {
         cursor: pointer;
-        transition: 0.4s;
+        transition: 0.3s;
 
         &--left {
           margin-right: 10px;
@@ -62,9 +62,17 @@
       position: relative;
       height: 458px;
       margin: 0 10px;
-      transition: 0.4s;
+      transition: 0.3s;
 
       &:hover {
+        .directions-cards__image-hover {
+          opacity: 1;
+        }
+
+        .directions-cards__image {
+          opacity: 0;
+        }
+
         .directions-cards__title,
         .directions-cards__subtitle {
           color: $white;
@@ -81,10 +89,16 @@
       height: 237px;
       width: 100%;
       object-fit: cover;
+      transition: 0.3s;
     }
 
     &__image-hover {
-      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
     }
 
     &__text {
@@ -94,18 +108,21 @@
       padding: 64px 21px 32px;
       border: 1px solid $primary-text-color;
       border-top: none;
+      transition: 0.3s;
     }
 
     &__title {
       margin-bottom: 23px;
       font-weight: 700;
       max-width: 228px;
+      transition: 0.3s;
     }
 
     &__subtitle {
       color: $primary-text-color;
       max-width: 217px;
       font-size: 15px;
+      transition: 0.3s;
     }
   }
 }

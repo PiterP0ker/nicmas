@@ -124,6 +124,46 @@
                 'icon'              => 'align-left',
                 'keywords'          => array( 'certificates' ),
             ));
+
+            acf_register_block_type(array(
+                'name'              => 'page-navigation',
+                'title'             => __('Навігація по сторінці'),
+                'description'       => __('блок із навігацією по блокам що знаходяться нижче від цього блока'),
+                'render_template'   => 'blocks/page-navigation.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'page-navigation' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'breadcrumbs',
+                'title'             => __('Блок хлібних крихт'),
+                'description'       => __('блок із навігацією по меню відносно даної сторінки'),
+                'render_template'   => 'blocks/breadcrumbs.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'breadcrumbs' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'accordion',
+                'title'             => __('Блок робіт/звітів'),
+                'description'       => __('блок акордіону / таблиця робіт'),
+                'render_template'   => 'blocks/accordion.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'accordion' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'contact-form',
+                'title'             => __('Контактна форма'),
+                'description'       => __('форма для контактів'),
+                'render_template'   => 'blocks/contact-form.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'contact-form' ),
+            ));
         }
     }
 
@@ -142,5 +182,9 @@ function filter_function_name_2201( $allowed_block_types, $block_editor_context 
         'acf/services',
         'acf/image-text',
         'acf/certificates',
+        'acf/page-navigation',
+        'acf/breadcrumbs',
+        'acf/accordion',
+        'acf/contact-form'
     ];
 }

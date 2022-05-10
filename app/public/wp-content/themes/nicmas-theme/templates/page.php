@@ -1,1 +1,3 @@
-<h1>klsajfka</h1>
+<?php
+
+the_content();

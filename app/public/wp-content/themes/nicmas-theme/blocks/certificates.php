@@ -28,6 +28,7 @@ $images = get_field("certificates_gallery");
 
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <a id="<?php echo $title ?>"></a>
     <div class="container certificates__container">
         <h2 class="certificates__title"><?php echo $title ?></h2>
         <div class="certificates__slider-controls">

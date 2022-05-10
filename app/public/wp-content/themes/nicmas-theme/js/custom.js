@@ -1,5 +1,15 @@
 jQuery(function ($) {
 
+    $(window).ready(function () {
+        if ($(window).scrollTop() > $(window).height()) {
+            $(".header").addClass('header--colored');
+        } else {
+            if ($(".header").hasClass('header--colored')) {
+                $(".header").removeClass('header--colored');
+            }
+        }
+    })
+
     $(window).on('load', function () {
         $('.header__menu .menu-item').mouseenter(function () {
             $('.header__menu~.menu-item a').css({
@@ -41,16 +51,6 @@ jQuery(function ($) {
             });
         });
 
-        $('.directions-cards__card').mouseover(function () {
-            $(this).find('.directions-cards__image').hide();
-            $(this).find('.directions-cards__image-hover').show();
-        });
-
-        $('.directions-cards__card').mouseout(function () {
-            $(this).find('.directions-cards__image').show();
-            $(this).find('.directions-cards__image-hover').hide();
-        });
-
         $('.sub-menu .sub-menu-item').mouseover(function () {
             $('.sub-menu__inner-content').css({
                 "opacity": "0",
@@ -68,6 +68,46 @@ jQuery(function ($) {
                 "pointer-events": "none"
             })
         });
+
+        $(window).on("scroll", function (e) {
+            $('.sub-menu').css({
+                "opacity": "0",
+                "pointer-events": "none"
+            });
+            if ($(".hero").length && $(window).scrollTop() > $(window).height() || !$(".hero").length && $(window).scrollTop() > 97) {
+                $(".header").addClass('header--colored');
+            } else {
+                if ($(".header").hasClass('header--colored')) {
+                    $(".header").removeClass('header--colored');
+                }
+            }
+        })
+
+        const pageNavigationPosition = $(".page-navigation")[0]?.offsetTop + $(".page-navigation").outerHeight();
+
+        $(document).on('mousewheel', function (e) {
+            if (e.originalEvent.wheelDelta < 0) {
+                if (!$('.header').hasClass('header--hidden')) {
+                    $('.header').addClass('header--hidden')
+                }
+                if ($(window).scrollTop() > pageNavigationPosition && !$('.page-navigation').hasClass('page-navigation--sticky')) {
+                    $('.page-navigation').addClass('page-navigation--sticky');
+                }
+                if($('.page-navigation').hasClass('page-navigation--sticky-shown')) {
+                    $('.page-navigation').removeClass('page-navigation--sticky-shown');
+                }
+            } else {
+                if ($('.header').hasClass('header--hidden')) {
+                    $('.header').removeClass('header--hidden')
+                }
+                if ($(window).scrollTop() <= pageNavigationPosition && $('.page-navigation').hasClass('page-navigation--sticky')) {
+                    $('.page-navigation').removeClass('page-navigation--sticky');
+                }
+                if ($(window).scrollTop() > pageNavigationPosition && $('.page-navigation').hasClass('page-navigation--sticky')) {
+                    $('.page-navigation').addClass('page-navigation--sticky-shown');
+                }
+            }
+        })
 
         $('.main-hero-slider').slick({
             slidesToShow: 1,
@@ -188,6 +228,12 @@ jQuery(function ($) {
             $(this).find('.services__info-block').css("height", $($(this).find('.services__information')?.[0]).height())
         })
 
+        if ($('.hero').length && $(window).scrollTop() < $(window).height()) {
+            setTimeout(function () {
+                $("html, body").animate({ scrollTop: $(window).height() }, 300);
+            }, 200)
+        }
+
         $('.loadmore').click(function () {
             let post_type = $(this).attr('data-post-type');
             var button = $(this),
@@ -207,7 +253,6 @@ jQuery(function ($) {
                     button.text('Завантаження...');
                 },
                 success: function (data) {
-                    console.log('data', data)
                     if (data) {
                         $('.all-posts-news__little').append(data);
                         button.text('Усі новини');

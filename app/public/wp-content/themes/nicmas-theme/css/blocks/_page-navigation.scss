@@ -1,0 +1,40 @@
+.page-navigation {
+  padding: 70px 0;
+  top: -182px;
+
+  &--sticky {
+    position: sticky;
+    padding: 5px 0;
+    background-color: $grey;
+    transition: 0.3s;
+    z-index: 3;
+  }
+
+  &--sticky-shown {
+    top: 97px;
+  }
+
+  &__container {
+    display: grid;
+    grid-column-gap: 25px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $grey;
+    padding: 11px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}
