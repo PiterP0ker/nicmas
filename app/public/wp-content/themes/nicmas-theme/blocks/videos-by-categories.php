@@ -26,6 +26,38 @@ if( !empty($block['align']) ) {
 
 $title = get_field('videos-by-categories-title');
 $videos = get_field('videos-by-categories');
+
+function getDuration($videoID){
+   $apikey = "AIzaSyAAlPE3N8dyOuzY8-f6hYg5vuYmQS6ceLs";
+   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
+   $VidDuration =json_decode($dur, true);
+   foreach ($VidDuration['items'] as $vidTime)
+   {
+       $VidDuration= $vidTime['contentDetails']['duration'];
+   }
+   preg_match_all('/(\d+)/',$VidDuration,$parts);
+   return convertDuration($parts);
+}
+
+function convertDuration($parts) {
+    $result = '';
+
+    if($parts[0][0]) {
+        $result = $result.$parts[0][0];
+    }
+
+    if($parts[0][1]) {
+        $result = $result.":".$parts[0][1];
+    } else {
+        $result = "0:".$result;
+    }
+
+    if($parts[0][2]) {
+        $result = $result.":".$parts[0][2];
+    }
+
+    return $result;
+}
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
@@ -37,11 +69,20 @@ $videos = get_field('videos-by-categories');
             <div class="videos-by-categories-block">
                 <?php foreach( $videos as $video ): ?>
                     <?php setup_postdata($videos); ?>
-                    <?php $video_link = get_field('video_link', $video->ID); ?>
+                    <?php
+                        $video_link = get_field('video_link', $video->ID);
+                        $categories = get_the_category($video->ID);
+                        $category = $categories[0]->name;
+
+                        $url_path = parse_url($video_link['url'], PHP_URL_PATH);
+                        $basename = pathinfo($url_path, PATHINFO_BASENAME);
+                    ?>
 
                     <div class="videos-by-categories-block__link">
                         <iframe width="400" height="301" src="<?php echo $video_link['url']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="videos-by-categories-block__category"><?php echo $category; ?></p>
                         <p class="videos-by-categories-block__title"><?php echo get_the_title($video); ?></p>
+                        <p class="videos-by-categories-block__title"><?php echo getDuration($basename); ?></p>
                     </div>
                 <?php endforeach; ?>
             </div>
