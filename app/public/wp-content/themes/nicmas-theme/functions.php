@@ -73,7 +73,8 @@ add_action('wp_enqueue_scripts', function () {
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script('scrollreveal', 'https://unpkg.com/scrollreveal');
-	wp_enqueue_script('slick-js', get_template_directory_uri() . '/js/vendors/slick.min.js', 'jquery', filemtime('wp-content/themes/' . get_stylesheet() . '/js/vendors/slick.min.js'), true);
+    wp_enqueue_script('slick-js', get_template_directory_uri() . '/js/vendors/slick.min.js', 'jquery', filemtime('wp-content/themes/' . get_stylesheet() . '/js/vendors/slick.min.js'), true);
+    wp_enqueue_script('select2-js', get_template_directory_uri() . '/js/vendors/select2.min.js', 'jquery', filemtime('wp-content/themes/' . get_stylesheet() . '/js/vendors/select2.min.js'), true);
 
 	wp_register_script('custom_scripts', get_template_directory_uri() . '/js/custom.js', 'jquery', filemtime('wp-content/themes/' . get_stylesheet() . '/js/custom.js'), true);
 
@@ -369,3 +370,63 @@ function loadmore_ajax_handler(){
 
 add_action('wp_ajax_loadmore', 'loadmore_ajax_handler');
 add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler');
+
+function loadmore_accordion_ajax_handler(){
+
+// 	$args = json_decode( stripslashes( $_POST['query'] ), true );
+    $args['paged'] = $_POST['page'] + 1;
+    $args['post_status'] = 'publish';
+    $args['post_type'] = $_POST['post_type'];
+    $args['posts_per_page'] = $_POST['ppp'];
+    if ($_POST['term'] !== 'all') {
+        $args[$_POST['tax']] = $_POST['term'];
+    }
+
+    $loop = new WP_Query($args);
+
+
+    if( $loop->have_posts() ) :
+
+        while( $loop->have_posts() ): $loop->the_post();
+
+
+            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID));
+
+        endwhile;
+
+    endif;
+    die;
+}
+
+add_action('wp_ajax_loadmore-accordion', 'loadmore_accordion_ajax_handler');
+add_action('wp_ajax_nopriv_loadmore-accordion', 'loadmore_accordion_ajax_handler');
+
+function load_accordion_ajax_handler(){
+
+// 	$args = json_decode( stripslashes( $_POST['query'] ), true );
+    $args['paged'] = 0;
+    $args['post_status'] = 'publish';
+    $args['post_type'] = $_POST['post_type'];
+    $args['posts_per_page'] = $_POST['ppp'];
+    if ($_POST['term'] !== 'all') {
+        $args[$_POST['tax']] = $_POST['term'];
+    }
+
+    $loop = new WP_Query($args);
+
+
+    if( $loop->have_posts() ) :
+
+        while( $loop->have_posts() ): $loop->the_post();
+
+
+            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID));
+
+        endwhile;
+
+    endif;
+    die;
+}
+
+add_action('wp_ajax_load-accordion', 'load_accordion_ajax_handler');
+add_action('wp_ajax_nopriv_load-accordion', 'load_accordion_ajax_handler');

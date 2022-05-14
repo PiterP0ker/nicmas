@@ -162,6 +162,54 @@ h5 {
     }
 }
 
+.select2-hidden-accessible {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select2-search__field {
+    display: none;
+}
+
+.select2-results__option[aria-selected="true"] {
+    display: none;
+}
+
+.select2-container {
+    border: 1px solid $black;
+    border-top: none;
+    min-width: 300px;
+    background-color: $white;
+}
+
+.select2-dropdown {
+    .select2-results {
+        &__options {
+            padding: 11px 0 15px;
+        }
+
+        &__option {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 7px 17px 7px 19px;
+            color: $primary-text-color;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &--highlighted {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+}
+
 .relative {
     position: relative;
+}
+
+.flex {
+    display: flex;
 }
