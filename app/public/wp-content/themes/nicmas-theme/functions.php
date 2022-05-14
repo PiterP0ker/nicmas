@@ -349,13 +349,14 @@ function loadmore_ajax_handler(){
 	$args['paged'] = $_POST['page'] + 1;
 	$args['post_status'] = 'publish';
 	$args['post_type'] = $_POST['post_type'];
-	$args['post_per_page'] = $_POST['ppp'];
+	$args['posts_per_page'] = $_POST['ppp'];
 
-    $zaloop = new WP_Query($args);
+    $loop = new WP_Query($args);
 
-	if( $zaloop->have_posts() ) :
 
-		while( $zaloop->have_posts() ): $zaloop->the_post();
+	if( $loop->have_posts() ) :
+
+		while( $loop->have_posts() ): $loop->the_post();
 
 
 			get_template_part('template-parts/actuals-card', '', array('actual' => get_post()->ID));

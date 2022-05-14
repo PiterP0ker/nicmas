@@ -236,13 +236,14 @@ jQuery(function ($) {
 
         $('.loadmore').click(function () {
             let post_type = $(this).attr('data-post-type');
-            var button = $(this),
+            let posts_per_page = $(this).attr('data-posts-per-page');
+            let button = $(this),
                 data = {
                     'action': 'loadmore',
                     'query': loadmore_params.posts,
                     'page': loadmore_params.current_page,
                     'post_type': post_type,
-                    'ppp': '12'
+                    'ppp': posts_per_page
                 };
 
             $.ajax({
@@ -255,7 +256,7 @@ jQuery(function ($) {
                 success: function (data) {
                     if (data) {
                         $('.all-posts-news__little').append(data);
-                        button.text('Усі новини');
+                        button.text('Показати більше');
                         loadmore_params.current_page++;
 
                         if (loadmore_params.current_page === loadmore_params.max_page)
