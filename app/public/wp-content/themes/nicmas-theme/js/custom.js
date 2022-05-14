@@ -316,7 +316,7 @@ jQuery(function ($) {
                 },
                 success: function (data) {
                     if (data) {
-                        $('.all-posts-news__little').append(data);
+                        $('.cards-block').append(data);
                         button.text('Показати більше');
                         loadmore_params.current_page++;
 

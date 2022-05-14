@@ -46,7 +46,7 @@ $posts = new WP_Query( $args );
             </a>
 
             <?php if( $posts->have_posts() ): ?>
-                <div class="all-posts-news__little">
+                <div class="all-posts-news__little cards-block">
                     <?php while( $posts->have_posts() ): ?>
                     <?php $posts->the_post(); ?>
 

@@ -58,6 +58,12 @@ function convertDuration($parts) {
 
     return $result;
 }
+
+$args = array(
+    'post_type' => 'video',
+	'posts_per_page' => 3,
+);
+$posts = new WP_Query( $args );
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
@@ -66,7 +72,7 @@ function convertDuration($parts) {
                 <h2 class="videos-by-categories__title"><?php echo $title; ?></h2>
             <?php endif; ?>
 
-            <div class="videos-by-categories-block">
+            <div class="videos-by-categories-block cards-block">
                 <?php foreach( $videos as $video ): ?>
                     <?php setup_postdata($videos); ?>
                     <?php
@@ -87,7 +93,7 @@ function convertDuration($parts) {
                 <?php endforeach; ?>
             </div>
 
-            <span class="link-to-archive loadmore">Показати більше</span>
+            <span class="link-to-archive loadmore-video" data-post-type="<?php echo $args['posts_per_page'] ?>" data-posts-per-page="<?php echo $args['posts_per_page'] ?>">Показати більше</span>
         </div>
     </div>
 </section>
