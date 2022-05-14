@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Directions Template
+Template Name: About Concern Template
 */
 get_header();
 

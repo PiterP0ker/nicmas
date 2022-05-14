@@ -35,11 +35,12 @@ $args = array(
 	'posts_per_page' => 12,
 );
 $posts = new WP_Query( $args );
+
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
         <div class="all-posts-news-wrapper">
-            <a href="<?php echo the_permalink($highlighted[0]); ?>" class="all-posts-news__big" style="background-image: url('<?php echo get_the_post_thumbnail_url($highlighted[0], 'large'); ?>')">
+            <a href="<?php the_permalink($highlighted[0]); ?>" class="all-posts-news__big" style="background-image: url('<?php echo get_the_post_thumbnail_url($highlighted[0], 'large'); ?>')">
                 <div class="all-posts-news__gradient"></div>
                 <p class="all-posts-news__big-title"><?php echo get_the_title($highlighted[0]); ?></p>
             </a>
@@ -56,7 +57,7 @@ $posts = new WP_Query( $args );
             <?php wp_reset_postdata(); ?>
             <?php endif; ?>
 
-                <span class="link-to-archive loadmore" data-post-type="<?php echo $all_post_type; ?>">Усі новини</span>
+                <span class="link-to-archive loadmore" data-post-type="<?php echo $all_post_type; ?>" data-posts-per-page="<?php echo $args['posts_per_page'] ?>">Показати більше</span>
 
         </div>
     </div>
