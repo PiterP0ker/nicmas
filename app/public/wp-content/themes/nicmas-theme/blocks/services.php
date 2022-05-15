@@ -46,6 +46,21 @@ $title = get_field("services_title");
                 </div>
             <?php endif; ?>
         </div>
+        <div class="services__menu-block-mobile">
+            <?php if(have_rows('services_items')): ?>
+            <select class="services__menu-select">
+                <?php
+                    $index = 0;
+                    while( have_rows('services_items') ) : the_row();
+                ?>
+                        <option value="<?php echo $index ?>"><?php echo get_sub_field('title') ?></option>
+                <?php
+                    $index++;
+                    endwhile;
+                ?>
+            </select>
+            <?php endif; ?>
+        </div>
         <div class="services__info-block">
             <?php if(have_rows('services_items')): ?>
                 <?php

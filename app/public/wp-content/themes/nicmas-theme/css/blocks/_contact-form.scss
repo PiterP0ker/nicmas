@@ -1,22 +1,46 @@
 .contact-form {
-  margin: 100px 0 305px;
+  margin: 0;
+
+  @media screen and (min-width: $screen-md) {
+    margin: 100px 0 305px;
+  }
 
   &__container {
-    background-color: $grey;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 0 0 100px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+
+    @media screen and (min-width: $screen-lg) {
+      padding: 0 0 0 100px;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 0 0 20px;
+      background-color: $grey;
+    }
   }
 
   &__title {
     margin-bottom: 33px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $screen-md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__contacts {
-    padding: 45px 0 87px;
+    padding: 55px 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media screen and (min-width: $screen-md) {
+      padding: 45px 0 87px;
+    }
   }
 
   &__contact-block {
@@ -60,10 +84,14 @@
    &__form {
      background-color: $primary-color;
      padding: 43px 48px;
-     position: absolute;
-     top: 153px;
-     right: 77px;
+     position: relative;
      width: 100%;
+
+     @media screen and (min-width: $screen-lg) {
+       position: absolute;
+       top: 153px;
+       right: 77px;
+     }
    }
 
   &__form-title {

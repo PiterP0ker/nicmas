@@ -22,6 +22,7 @@ jQuery(function ($) {
             let posts_per_page = $(this).attr('data-posts-per-page');
             let tax = $(this).attr('data-tax');
             let term = $('.accordion__select').val();
+            let list = $(this).parent().prev().find('.accordion__table-list');
             let button = $(this),
                 data = {
                     'action': 'loadmore-accordion',
@@ -42,7 +43,7 @@ jQuery(function ($) {
                 },
                 success: function (data) {
                     if (data) {
-                        $('.accordion__table-list').append(data);
+                        list.append(data);
                         initAccordion();
                         button.text('Більше');
                         loadmore_params.current_page++;
@@ -67,22 +68,27 @@ jQuery(function ($) {
             }
         }
 
-        $('.accordion__table-info').slideUp(0)
-        $('.partners-list__logo').contents().find('svg').css({
-            'margin-left': 'auto',
-            'margin-right': 'auto',
-            'margin-top': 'auto',
-        });
-        $('.partners-list__logo').contents().find('svg').find('path').css({
-            'transition': '0.3s'
-        });
-        $('.partners-list__logo').contents().find('svg').find('rect').css({
-            'transition': '0.3s'
-        });
+        if ($('.accordion')) {
+            $('.accordion__table-info').slideUp(0)
+        }
+
+        if ($('.partners-list')) {
+            $('.partners-list__logo').contents().find('svg').css({
+                'margin-left': 'auto',
+                'margin-right': 'auto',
+                'margin-top': 'auto',
+                'max-width': '100%'
+            });
+            $('.partners-list__logo').contents().find('svg').find('path').css({
+                'transition': '0.3s'
+            });
+            $('.partners-list__logo').contents().find('svg').find('rect').css({
+                'transition': '0.3s'
+            });
+        }
     })
 
     $(window).on('load', function () {
-        initAccordion();
         $('.header__menu .menu-item').mouseenter(function () {
             $('.header__menu~.menu-item a').css({
                 "background-color": "transparent"
@@ -91,6 +97,7 @@ jQuery(function ($) {
                 "background-color": "#265BC2"
             })
         })
+
         $('.header__menu .menu-item').mouseleave(function () {
             $($(this).find('a')[0]).css({
                 "background-color": "transparent"
@@ -181,124 +188,144 @@ jQuery(function ($) {
             }
         })
 
-        $('.main-hero-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            prevArrow: '.main-hero-arrow--left',
-            nextArrow: '.main-hero-arrow--right',
-        });
+        if ($('.main-hero')) {
+            $('.main-hero-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                prevArrow: '.main-hero-arrow--left',
+                nextArrow: '.main-hero-arrow--right',
+            });
+        }
 
-        $('.directions-cards').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            mobileFirst: true,
-            prevArrow: '.directions-arrow--left',
-            nextArrow: '.directions-arrow--right',
-            responsive: [
-                {
-                    breakpoint: 604,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: true,
+        if ($('.directions')) {
+            $('.directions-cards').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                mobileFirst: true,
+                prevArrow: '.directions-arrow--left',
+                nextArrow: '.directions-arrow--right',
+                responsive: [
+                    {
+                        breakpoint: 604,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            arrows: true,
+                        }
                     }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        arrows: true,
-                    }
-                }
-            ]
-        });
+                ]
+            });
+        }
 
-        $('.certificates__slider').slick({
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            mobileFirst: true,
-            // centerMode: true,
-            prevArrow: '.certificates__slider-arrow--left',
-            nextArrow: '.certificates__slider-arrow--right',
-            responsive: [
-                {
-                    breakpoint: 604,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        // initialSlide: 1,
-                        arrows: true,
+        if ($('.certificates')) {
+            $('.certificates__slider').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                mobileFirst: true,
+                // centerMode: true,
+                prevArrow: '.certificates__slider-arrow--left',
+                nextArrow: '.certificates__slider-arrow--right',
+                responsive: [
+                    {
+                        breakpoint: 604,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            // initialSlide: 1,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            // initialSlide: 1,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 1240,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            // initialSlide: 2,
+                            // centerPadding: "109px 0 149px",
+                            arrows: true,
+                        }
                     }
-                },
-                {
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        // initialSlide: 1,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 1240,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        // initialSlide: 2,
-                        // centerPadding: "109px 0 149px",
-                        arrows: true,
-                    }
-                }
-            ]
-        })
-
-        $('.services__slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            infinite: false,
-            prevArrow: '.services__slider-arrow.left',
-            nextArrow: '.services__slider-arrow.right',
-        })
-
-        $('.services__menu-item').click(function (e) {
-            e.preventDefault();
-            const id = $(this).data('id')
-            $('.services__menu-item').removeClass('active')
-            $(this).addClass('active')
-            $('.services__information').each(function (item) {
-                if (item === id) {
-                    $(this).addClass('active')
-                    $('.services__info-block').css("height", $(this).height())
-                } else {
-                    $(this).removeClass('active')
-                }
+                ]
             })
-        })
+        }
 
-        $('.services').each(function () {
-            $($(this).find('.services__menu-item')?.[0]).addClass('active');
-            $($(this).find('.services__information')?.[0]).addClass('active');
-            $(this).find('.services__info-block').css("height", $($(this).find('.services__information')?.[0]).height())
-        })
+        if ($('.services')) {
+            $('.services__slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                infinite: false,
+                prevArrow: '.services__slider-arrow.left',
+                nextArrow: '.services__slider-arrow.right',
+            })
+
+            $('.services__menu-item').click(function (e) {
+                e.preventDefault();
+                const id = $(this).data('id')
+                $('.services__menu-item').removeClass('active')
+                $(this).addClass('active')
+                $('.services__information').each(function (item) {
+                    if (item === id) {
+                        $(this).addClass('active')
+                        $('.services__info-block').css("height", $(this).height())
+                    } else {
+                        $(this).removeClass('active')
+                    }
+                })
+            })
+
+            $('.services').each(function () {
+                $($(this).find('.services__menu-item')?.[0]).addClass('active');
+                $($(this).find('.services__information')?.[0]).addClass('active');
+                $(this).find('.services__info-block').css("height", $($(this).find('.services__information')?.[0]).height())
+            })
+
+            $('.services__menu-select').select2({ dropdownAutoWidth: true }).on('change', function () {
+                const id = Number($(this).val());
+                $('.services__information').each(function (item) {
+                    if (item === id) {
+                        $(this).addClass('active')
+                        $('.services__info-block').css("height", $(this).height())
+                    } else {
+                        $(this).removeClass('active')
+                    }
+                })
+            })
+        }
 
         $('.chosen-videos__video-link').click(function (e) {
             e.preventDefault();
@@ -367,58 +394,66 @@ jQuery(function ($) {
             });
         });
 
-        initAccordionLoadmore()
+        if ($('.accordion')) {
+            initAccordion();
+            initAccordionLoadmore()
 
-        $('.accordion__select').select2({ dropdownAutoWidth: true }).on('change', function () {
-            let post_type = $(this).attr('data-post-type');
-            let posts_per_page = $(this).attr('data-posts-per-page');
-            let tax = $(this).attr('data-tax');
-            let term = $(this).val();
-            let data = {
-                'action': 'load-accordion',
-                'page': loadmore_params.current_page,
-                'post_type': post_type,
-                'tax': tax,
-                'term': term,
-                'ppp': posts_per_page
-            };
-            $.ajax({
-                url: loadmore_params.ajaxurl,
-                data: data,
-                type: 'POST',
-                beforeSend: function (xhr) {
-                    $('.accordion__table .accordion__table-list').empty();
-                    $('.accordion__bottom').empty();
-                },
-                success: function (data) {
-                    if (data) {
-                        $('.accordion__table-list').append(data);
-                        let loadmoreButton = `<span class="link-to-archive loadmore-accordion" data-post-type="`+post_type+`" data-posts-per-page="`+posts_per_page+`" data-tax="`+tax+`">Більше</span>`
-                        $('.accordion__bottom').append(loadmoreButton);
-                        initAccordion();
-                        initAccordionLoadmore()
-                        loadmore_params.current_page = 1;
+            $('.accordion__select').select2({ dropdownAutoWidth: true }).on('change', function () {
+                let post_type = $(this).attr('data-post-type');
+                let posts_per_page = $(this).attr('data-posts-per-page');
+                let tax = $(this).attr('data-tax');
+                let term = $(this).val();
+                let list = $(this).parent().next().find('.accordion__table-list');
+                let loadmoreButtonContainer = $(this).parent().next().next()
 
+                let data = {
+                    'action': 'load-accordion',
+                    'page': loadmore_params.current_page,
+                    'post_type': post_type,
+                    'tax': tax,
+                    'term': term,
+                    'ppp': posts_per_page
+                };
+                $.ajax({
+                    url: loadmore_params.ajaxurl,
+                    data: data,
+                    type: 'POST',
+                    beforeSend: function (xhr) {
+                        list.empty();
+                        loadmoreButtonContainer.empty();
+                    },
+                    success: function (data) {
+                        if (data) {
+                            list.append(data);
+                            let loadmoreButton = `<span class="link-to-archive loadmore-accordion" data-post-type="`+post_type+`" data-posts-per-page="`+posts_per_page+`" data-tax="`+tax+`">Більше</span>`
+                            loadmoreButtonContainer.append(loadmoreButton);
+                            initAccordion();
+                            initAccordionLoadmore()
+                            loadmore_params.current_page = 1;
+
+                        }
                     }
-                }
+                });
             });
-        });
+        }
 
-        $('.partners-list__card').mouseover(function () {
-            const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
-            const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
-            path.css("fill", "#fff");
-            rect.css("fill", "#fff");
-        });
+        if ($('.partners-list')) {
+            $('.partners-list__card').mouseover(function () {
+                const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
+                const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
+                path.css("fill", "#fff");
+                rect.css("fill", "#fff");
+            });
 
-        $('.partners-list__card').mouseout(function () {
-            const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
-            const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
-            const pathDefColor = path.attr('fill');
-            const rectDefColor = rect.attr('fill');
-            path.css("fill", pathDefColor);
-            rect.css("fill", rectDefColor);
-        });
+            $('.partners-list__card').mouseout(function () {
+                const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
+                const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
+                const pathDefColor = path.attr('fill');
+                const rectDefColor = rect.attr('fill');
+                path.css("fill", pathDefColor);
+                rect.css("fill", rectDefColor);
+            });
+        }
 
     });
 });

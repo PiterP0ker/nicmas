@@ -179,8 +179,46 @@ h5 {
 .select2-container {
     border: 1px solid $black;
     border-top: none;
-    min-width: 300px;
+    min-width: 350px;
     background-color: $white;
+    border-top: 1px solid $black;
+
+    .selection {
+        .select2-selection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 12px 19px;
+            cursor: pointer;
+
+            &__rendered {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &__arrow {
+                width: 10px;
+                height: 10px;
+                border-bottom: 1px solid $black;
+                border-right: 1px solid $black;
+                transform-origin: center;
+                transform: rotate(45deg);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &--open {
+        .selection {
+            .select2-selection {
+                &__arrow {
+                    transform: rotate(225deg);
+                }
+            }
+        }
+    }
 }
 
 .select2-dropdown {
@@ -212,4 +250,20 @@ h5 {
 
 .flex {
     display: flex;
+}
+
+.mobile {
+    display: block;
+
+    @media screen and (min-width: $screen-md) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @media screen and (min-width: $screen-md) {
+        display: block;
+    }
 }
