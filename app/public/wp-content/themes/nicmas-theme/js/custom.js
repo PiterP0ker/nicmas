@@ -327,6 +327,29 @@ jQuery(function ($) {
             })
         }
 
+        $('.chosen-videos__video-link').click(function (e) {
+            e.preventDefault();
+            const id = $(this).data('id')
+            $('.chosen-videos__video-link').removeClass('active')
+            $(this).addClass('active')
+            $('.chosen-videos__iframe-link').each(function (item) {
+                if (item === id) {
+                    $(this).addClass('active')
+                    $('.chosen-videos__iframe-block').css("height", $(this).height())
+                } else {
+                    const iframe = $(this).find('.chosen-videos__iframe').find('iframe');
+                    $(this).removeClass('active');
+                    iframe.attr('src', iframe.attr('src'));
+                }
+            })
+        })
+
+        $('.chosen-videos').each(function () {
+            $($(this).find('.chosen-videos__video-link')?.[0]).addClass('active');
+            $($(this).find('.chosen-videos__iframe-link')?.[0]).addClass('active');
+            $(this).find('.chosen-videos__iframe-block').css("height", $($(this).find('.chosen-videos__iframe-link')?.[0]).height())
+        })
+
         if ($('.hero').length && $(window).scrollTop() < $(window).height()) {
             setTimeout(function () {
                 $("html, body").animate({ scrollTop: $(window).height() }, 300);
