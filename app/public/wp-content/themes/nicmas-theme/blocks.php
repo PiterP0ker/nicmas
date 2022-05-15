@@ -46,6 +46,16 @@
             ));
 
             acf_register_block_type(array(
+                'name'              => 'all-videos',
+                'title'             => __('Актуальні відео'),
+                'description'       => __('Актуальні відео'),
+                'render_template'   => 'blocks/all-videos/all-videos.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'all-videos' ),
+            ));
+
+            acf_register_block_type(array(
                 'name'              => 'chosen-videos',
                 'title'             => __('Вибірка відео'),
                 'description'       => __('Вибірка відео'),
@@ -59,7 +69,7 @@
                 'name'              => 'videos-by-categories',
                 'title'             => __('Відео за категорією'),
                 'description'       => __('Відео за категорією'),
-                'render_template'   => 'blocks/videos-by-categories.php',
+                'render_template'   => 'blocks/all-videos/videos-by-categories.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
                 'keywords'          => array( 'videos-by-categories' ),
@@ -185,6 +195,11 @@ function filter_function_name_2201( $allowed_block_types, $block_editor_context 
         'acf/page-navigation',
         'acf/breadcrumbs',
         'acf/accordion',
-        'acf/contact-form'
+        'acf/contact-form',
+        'acf/all-videos',
+        'acf/videos-by-categories',
+        'acf/chosen-videos',
+        'acf/all-posts-news',
+        'acf/directions',
     ];
 }
