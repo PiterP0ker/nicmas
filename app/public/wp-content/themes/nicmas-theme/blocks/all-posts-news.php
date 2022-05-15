@@ -57,7 +57,7 @@ $posts = new WP_Query( $args );
             <?php wp_reset_postdata(); ?>
             <?php endif; ?>
 
-                <span class="link-to-archive loadmore" data-post-type="<?php echo $all_post_type; ?>" data-posts-per-page="<?php echo $args['posts_per_page'] ?>">Показати більше</span>
+                <span class="link-to-archive loadmore" data-current-page="1" data-post-type="<?php echo $all_post_type; ?>" data-posts-per-page="<?php echo $args['posts_per_page'] ?>">Показати більше</span>
 
         </div>
     </div>

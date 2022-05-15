@@ -346,11 +346,44 @@ add_image_size( 'posts', 270, 194 );
 
 function loadmore_ajax_handler(){
 
+function getDuration($videoID){
+   $apikey = "AIzaSyAAlPE3N8dyOuzY8-f6hYg5vuYmQS6ceLs";
+   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
+   $VidDuration =json_decode($dur, true);
+   foreach ($VidDuration['items'] as $vidTime)
+   {
+       $VidDuration= $vidTime['contentDetails']['duration'];
+   }
+   preg_match_all('/(\d+)/',$VidDuration,$parts);
+   return convertDuration($parts);
+}
+
+function convertDuration($parts) {
+    $result = '';
+
+    if($parts[0][0]) {
+        $result = $result.$parts[0][0];
+    }
+
+    if($parts[0][1]) {
+        $result = $result.":".$parts[0][1];
+    } else {
+        $result = "0:".$result;
+    }
+
+    if($parts[0][2]) {
+        $result = $result.":".$parts[0][2];
+    }
+
+    return $result;
+}
+
 // 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1;
 	$args['post_status'] = 'publish';
 	$args['post_type'] = $_POST['post_type'];
 	$args['posts_per_page'] = $_POST['ppp'];
+	$args['category_name'] = $_POST['category'];
 
     $loop = new WP_Query($args);
 
@@ -358,9 +391,26 @@ function loadmore_ajax_handler(){
 	if( $loop->have_posts() ) :
 
 		while( $loop->have_posts() ): $loop->the_post();
+		    if( $args['post_type'] === 'video') {
+                $video_link = get_field('video_link', get_post()->ID,);
+                $categories = get_the_category(get_post()->ID,);
+                $category = $categories[0]->name;
 
+                $url_path = parse_url($video_link['url'], PHP_URL_PATH);
+                $basename = pathinfo($url_path, PATHINFO_BASENAME);
 
-			get_template_part('template-parts/actuals-card', '', array('actual' => get_post()->ID));
+		        get_template_part(
+                    'template-parts/video-card',
+                    '',
+                    array(
+                    'id' => get_post()->ID,
+                    'video_link' => $video_link['url'],
+                    'category' => $category,
+                    'duration' => getDuration($basename),
+                ));
+		    } else {
+			    get_template_part('template-parts/actuals-card', '', array('actual' => get_post()->ID));
+		    }
 
 		endwhile;
 
