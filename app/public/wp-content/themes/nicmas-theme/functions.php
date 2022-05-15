@@ -440,7 +440,7 @@ function loadmore_accordion_ajax_handler(){
         while( $loop->have_posts() ): $loop->the_post();
 
 
-            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID));
+            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID, 'post_type' => $_POST['post_type']));
 
         endwhile;
 
@@ -470,7 +470,7 @@ function load_accordion_ajax_handler(){
         while( $loop->have_posts() ): $loop->the_post();
 
 
-            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID));
+            get_template_part('template-parts/accordion-row', '', array('post_id' => get_post()->ID, 'post_type' => $_POST['post_type']));
 
         endwhile;
 

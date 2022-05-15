@@ -14,9 +14,11 @@ $file = get_field('file', $post_id);
     <div class="accordion__table-cell accordion__table-cell--date">
         <?php echo $date ?>
     </div>
+    <div class="mobile"></div>
     <div class="accordion__table-cell accordion__table-cell--customer">
         <?php if($post_type === 'references'): echo $customer; else: echo $period; endif; ?>
     </div>
+    <div class="mobile"></div>
     <div class="accordion__table-cell accordion__table-cell--description">
         <?php echo $description ?>
     </div>

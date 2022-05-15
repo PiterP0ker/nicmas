@@ -64,7 +64,7 @@ $posts = new WP_Query( $args );
                 </select>
             <?php else: ?>
                 <?php if($link): ?>
-                    <a class="link-to-archive" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
+                    <a class="link-to-archive desktop" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
                 <?php endif; ?>
             <?php endif; ?>
         </div>
@@ -95,6 +95,12 @@ $posts = new WP_Query( $args );
         <div class="accordion__bottom">
             <span class="link-to-archive loadmore-accordion" data-post-type="<?php echo $post_type; ?>" data-posts-per-page="<?php echo $args['posts_per_page'] ?>" data-tax="<?php echo $tax ?>">Більше</span>
         </div>
+        <?php else: ?>
+            <?php if($link): ?>
+            <div class="accordion__bottom">
+                <a class="link-to-archive mobile" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
+            </div>
+            <?php endif; ?>
         <?php endif; ?>
     </div>
 </section>

@@ -34,11 +34,20 @@
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     p + p {
       margin-top: 1rem;
     }
     @media screen and (min-width: $screen-lg) {
       max-width: 483px;
+    }
+
+    .link {
+      display: block;
+      margin-top: 39px;
     }
   }
 
