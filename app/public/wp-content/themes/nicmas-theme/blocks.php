@@ -118,7 +118,7 @@
             acf_register_block_type(array(
                 'name'              => 'certificates',
                 'title'             => __('Сертифікати'),
-                'description'       => __('блок із слайдером для сертифікатів'),
+                'description'       => __('Блок із слайдером для сертифікатів'),
                 'render_template'   => 'blocks/certificates.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
@@ -128,7 +128,7 @@
             acf_register_block_type(array(
                 'name'              => 'page-navigation',
                 'title'             => __('Навігація по сторінці'),
-                'description'       => __('блок із навігацією по блокам що знаходяться нижче від цього блока'),
+                'description'       => __('Блок із навігацією по блокам що знаходяться нижче від цього блока'),
                 'render_template'   => 'blocks/page-navigation.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
@@ -138,8 +138,8 @@
             acf_register_block_type(array(
                 'name'              => 'breadcrumbs',
                 'title'             => __('Блок хлібних крихт'),
-                'description'       => __('блок із навігацією по меню відносно даної сторінки'),
-                'render_template'   => 'blocks/breadcrumbs.php',
+                'description'       => __('Блок із навігацією по меню відносно даної сторінки'),
+                'render_template'   => 'blocks/breadcrumbs/breadcrumbs.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
                 'keywords'          => array( 'breadcrumbs' ),
@@ -148,7 +148,7 @@
             acf_register_block_type(array(
                 'name'              => 'accordion',
                 'title'             => __('Блок робіт/звітів'),
-                'description'       => __('блок акордіону / таблиця робіт'),
+                'description'       => __('Блок акордіону / таблиця робіт'),
                 'render_template'   => 'blocks/accordion.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
@@ -158,11 +158,21 @@
             acf_register_block_type(array(
                 'name'              => 'contact-form',
                 'title'             => __('Контактна форма'),
-                'description'       => __('форма для контактів'),
+                'description'       => __('Форма для контактів'),
                 'render_template'   => 'blocks/contact-form.php',
                 'category'          => 'formatting',
                 'icon'              => 'align-left',
                 'keywords'          => array( 'contact-form' ),
+            ));
+
+            acf_register_block_type(array(
+                'name'              => 'partners-list',
+                'title'             => __('Партнери'),
+                'description'       => __('Блок партнерів'),
+                'render_template'   => 'blocks/partners-list.php',
+                'category'          => 'formatting',
+                'icon'              => 'align-left',
+                'keywords'          => array( 'partners-list' ),
             ));
         }
     }
@@ -185,6 +195,7 @@ function filter_function_name_2201( $allowed_block_types, $block_editor_context 
         'acf/page-navigation',
         'acf/breadcrumbs',
         'acf/accordion',
-        'acf/contact-form'
+        'acf/contact-form',
+        'acf/partners-list'
     ];
 }
