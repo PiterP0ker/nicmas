@@ -306,16 +306,19 @@ jQuery(function ($) {
             }, 200)
         }
 
-        $('.loadmore').click(function () {
+        $('.loadmore').on('click', function () {
             let post_type = $(this).attr('data-post-type');
+            let category = $(this).attr('data-category');
             let posts_per_page = $(this).attr('data-posts-per-page');
+            let current_page = $(this).attr('data-current-page');
             let button = $(this),
                 data = {
                     'action': 'loadmore',
                     'query': loadmore_params.posts,
-                    'page': loadmore_params.current_page,
+                    'page': current_page,
                     'post_type': post_type,
-                    'ppp': posts_per_page
+                    'ppp': posts_per_page,
+                    'category': category
                 };
 
             $.ajax({
@@ -327,9 +330,9 @@ jQuery(function ($) {
                 },
                 success: function (data) {
                     if (data) {
-                        $('.cards-block').append(data);
+                        button.prev().append(data);
                         button.text('Показати більше');
-                        loadmore_params.current_page++;
+                        button.attr('data-current-page', current_page + 1);
 
                         if (loadmore_params.current_page === loadmore_params.max_page)
                             button.remove();
