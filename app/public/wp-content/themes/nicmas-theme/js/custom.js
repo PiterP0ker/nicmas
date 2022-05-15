@@ -68,6 +68,17 @@ jQuery(function ($) {
         }
 
         $('.accordion__table-info').slideUp(0)
+        $('.partners-list__logo').contents().find('svg').css({
+            'margin-left': 'auto',
+            'margin-right': 'auto',
+            'margin-top': 'auto',
+        });
+        $('.partners-list__logo').contents().find('svg').find('path').css({
+            'transition': '0.3s'
+        });
+        $('.partners-list__logo').contents().find('svg').find('rect').css({
+            'transition': '0.3s'
+        });
     })
 
     $(window).on('load', function () {
@@ -368,9 +379,23 @@ jQuery(function ($) {
                     }
                 }
             });
-
         });
 
+        $('.partners-list__card').mouseover(function () {
+            const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
+            const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
+            path.css("fill", "#fff");
+            rect.css("fill", "#fff");
+        });
+
+        $('.partners-list__card').mouseout(function () {
+            const path = $(this).find('.partners-list__logo').contents().find('svg').find('path');
+            const rect = $(this).find('.partners-list__logo').contents().find('svg').find('rect');
+            const pathDefColor = path.attr('fill');
+            const rectDefColor = rect.attr('fill');
+            path.css("fill", pathDefColor);
+            rect.css("fill", rectDefColor);
+        });
 
     });
 });

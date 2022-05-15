@@ -1,0 +1,92 @@
+.partners-list {
+  padding: 71px 0 150px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 22px;
+  }
+
+  &__name {
+    margin-top: 61px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: $primary-text-color;
+    transition: 0.3s;
+  }
+
+  &__logo-wrapper {
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 25px;
+    color: $primary-text-color;
+    transition: 0.3s;
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    height: 1px;
+    overflow: hidden;
+    transition: 0.3s;
+    opacity: 0;
+
+    .link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 136.41%;
+
+      svg {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        svg {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $secondary-text-color;
+    padding: 58px 25px 31px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+
+      .partners-list__name {
+        margin-top: 26px;
+        color: $white;
+      }
+
+      .partners-list__description {
+        color: $white;
+      }
+
+      .partners-list__link {
+        height: 35px;
+        opacity: 1;
+      }
+    }
+  }
+}

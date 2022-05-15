@@ -24,8 +24,8 @@ if( !empty($block['align']) ) {
     $className .= ' align' . $block['align'];
 }
 
-$title = get_field('all-videos-title');
-$videos = get_field('all-videos');
+$title = get_field('all-videos_title');
+
 require_once('duration-function.php');
 
 $args = array(
