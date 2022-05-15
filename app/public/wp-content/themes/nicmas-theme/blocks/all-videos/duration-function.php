@@ -15,13 +15,21 @@ function convertDuration($parts) {
     $result = '';
 
     if($parts[0][0]) {
-        $result = $result.$parts[0][0];
+        if($parts[0][0] < 10) {
+            $result = $result.'0'.$parts[0][0];
+        } else {
+            $result = $result.$parts[0][0];
+        }
     }
 
     if($parts[0][1]) {
-        $result = $result.":".$parts[0][1];
+        if($parts[0][1] < 10 && $parts[0][0]) {
+            $result = $result.":0".$parts[0][1];
+        } else {
+            $result = $result.":".$parts[0][1];
+        }
     } else {
-        $result = "0:".$result;
+        $result = "00:".$result;
     }
 
     if($parts[0][2]) {

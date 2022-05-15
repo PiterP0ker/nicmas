@@ -34,6 +34,41 @@
       margin-bottom: 0;
     }
   }
+
+  &--video {
+    background: $white;
+
+    .actual-block {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+
+      @media screen and (min-width: $screen-sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (min-width: $screen-md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .all-videos-block__iframe {
+      padding-top: 56.25%;
+      position: relative;
+      margin: 0 -20px 15px;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      @media screen and (min-width: $screen-sm) {
+        margin: 0 0 15px;
+      }
+    }
+  }
 }
 
 .actual-block__link {
