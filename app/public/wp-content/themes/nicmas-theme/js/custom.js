@@ -174,6 +174,16 @@ jQuery(function ($) {
             }
         })
 
+        $(".search-form__btn").on("click",function(e){
+            e.preventDefault();
+            $(".search-form__wrap").toggleClass("open");
+        });
+
+        $(".search-form__close").on("click",function(e){
+            e.preventDefault();
+            $(".search-form__wrap").removeClass("open");
+        });
+
         $(window).on("scroll", function (e) {
             $('.header__menu .sub-menu').css({
                 "opacity": "0",
@@ -482,6 +492,5 @@ jQuery(function ($) {
                 rect.css("fill", rectDefColor);
             });
         }
-
     });
 });

@@ -31,7 +31,7 @@
 
                     endif; ?>
                     <div class="header__search">
-                        <?php echo get_template_part('svg/search'); ?>
+                        <?php echo get_search_form(); ?>
                     </div>
 
                     <div class="header__language">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="header__search">
-                <?php echo get_template_part('svg/search'); ?>
+                <?php echo get_search_form(); ?>
             </div>
             <div class="header__burger-button">
                 <?php echo get_template_part('svg/burger-open'); ?>

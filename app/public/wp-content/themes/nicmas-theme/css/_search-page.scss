@@ -1,0 +1,40 @@
+.search-page {
+  padding: 100px 0;
+  background: #ccc;
+  min-height: calc(100vh - 483px);
+
+  @media screen and (min-width: $screen-md) {
+    min-height: calc(100vh - 271px);
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__results {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__result {
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 10px 1px rgb(82 82 82 / 15%);
+    margin-bottom: 10px;
+    transition: 0.4s;
+    background-color: $white;
+
+    &:hover {
+      background-color: $primary-color;
+
+      h2, p {
+        color: $white;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      color: $black;
+    }
+  }
+}
